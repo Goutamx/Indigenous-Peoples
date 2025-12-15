@@ -1,0 +1,2594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Theme 6 – Displacing Indigenous Peoples | Study Hub</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      color-scheme: light;
+    }
+
+    body {
+      font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      background-color: #f8fafc;
+      color: #0f172a;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .tab-button {
+      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-weight: 500;
+      font-size: 0.9rem;
+      padding: 0.5rem 0.9rem;
+      border-radius: 9999px;
+      color: #e0e7ff;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .tab-button[aria-selected="true"] {
+      background-color: #ffffff;
+      color: #4f46e5;
+      box-shadow: 0 10px 15px -3px rgba(15, 23, 42, 0.25);
+    }
+
+    .tab-button:hover {
+      background-color: rgba(129, 140, 248, 0.35);
+    }
+
+    .tab-button:focus-visible {
+      outline: 2px solid #4f46e5;
+      outline-offset: 2px;
+    }
+
+    .answer-key {
+      font-size: 0.8rem;
+      color: #6b7280;
+      font-style: italic;
+      display: inline-block;
+      margin-top: 0.25rem;
+    }
+
+    details summary {
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    details[open] summary {
+      color: #4f46e5;
+    }
+
+    details {
+      background-color: #ffffff;
+      border-radius: 0.5rem;
+      padding: 0.75rem 1rem;
+      border: 1px solid #e5e7eb;
+    }
+
+    .notes-section h2 {
+      font-size: 1.4rem;
+      margin-top: 1.75rem;
+      margin-bottom: 0.25rem;
+      font-weight: 600;
+      color: #1e293b;
+    }
+
+    .notes-section h3 {
+      font-size: 1.1rem;
+      margin-top: 1.25rem;
+      margin-bottom: 0.25rem;
+      font-weight: 600;
+      color: #1d4ed8;
+    }
+
+    .notes-section h4 {
+      font-size: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 0.25rem;
+      font-weight: 600;
+      color: #0f766e;
+    }
+
+    .notes-section p + p {
+      margin-top: 0.4rem;
+    }
+
+    .notes-section ul,
+    .notes-section ol {
+      margin-left: 1.25rem;
+      margin-top: 0.25rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .notes-section li + li {
+      margin-top: 0.15rem;
+    }
+
+    blockquote {
+      border-left: 4px solid #a5b4fc;
+      padding-left: 1rem;
+      margin: 0.75rem 0;
+      font-style: italic;
+      color: #475569;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 0.5rem;
+      padding-top: 0.6rem;
+      padding-bottom: 0.6rem;
+    }
+
+    .mcq-option {
+      list-style: none;
+      margin-left: 0;
+      padding: 0.35rem 0.6rem;
+      border-radius: 0.375rem;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: background-color 0.15s ease, border-color 0.15s ease,
+        color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .mcq-option:hover {
+      background-color: rgba(129, 140, 248, 0.12);
+    }
+
+    .mcq-option:focus-visible {
+      outline: 2px solid #4f46e5;
+      outline-offset: 2px;
+    }
+
+    .mcq-option.correct {
+      background-color: #ecfdf3;
+      border-color: #22c55e;
+      color: #14532d;
+    }
+
+    .mcq-option.wrong {
+      background-color: #fef2f2;
+      border-color: #ef4444;
+      color: #7f1d1d;
+    }
+
+    .mcq-option.disabled {
+      cursor: default;
+      opacity: 0.75;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <div class="min-h-screen flex flex-col">
+    <header class="bg-indigo-700 text-white shadow-md">
+      <div class="max-w-5xl mx-auto px-4 py-4 sm:py-6">
+        <h1 class="text-2xl sm:text-3xl font-semibold tracking-tight">
+          Theme 6 – Displacing Indigenous Peoples
+        </h1>
+        <p class="mt-1 text-sm sm:text-base text-indigo-100">
+          USA, Canada &amp; Australia – full notes and exam-style practice
+        </p>
+        <nav class="mt-4" aria-label="Study tabs">
+          <div
+            role="tablist"
+            aria-orientation="horizontal"
+            class="flex gap-2 overflow-x-auto pb-1"
+          >
+            <button
+              type="button"
+              class="tab-button"
+              role="tab"
+              aria-selected="true"
+              aria-controls="tab-notes"
+              id="tab-notes-tab"
+              data-tab-target="tab-notes"
+            >
+              Notes
+            </button>
+            <button
+              type="button"
+              class="tab-button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="tab-mcqs"
+              id="tab-mcqs-tab"
+              data-tab-target="tab-mcqs"
+            >
+              MCQs (20)
+            </button>
+            <button
+              type="button"
+              class="tab-button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="tab-2mark"
+              id="tab-2mark-tab"
+              data-tab-target="tab-2mark"
+            >
+              2-Mark (12)
+            </button>
+            <button
+              type="button"
+              class="tab-button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="tab-4mark"
+              id="tab-4mark-tab"
+              data-tab-target="tab-4mark"
+            >
+              4-Mark (8)
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="flex-1">
+      <div class="max-w-5xl mx-auto px-4 py-6 sm:py-8">
+        <!-- Tab 1: Notes -->
+        <section
+          id="tab-notes"
+          class="tab-panel notes-section space-y-6"
+          role="tabpanel"
+          aria-labelledby="tab-notes-tab"
+        >
+          <header>
+            <h2><strong>THEME 6 – DISPLACING INDIGENOUS PEOPLES</strong></h2>
+          </header>
+
+          <section aria-label="Introduction" class="space-y-3">
+            <h3>Introduction</h3>
+            <p>
+              This chapter tells some parts of the history of the original, native peoples of <strong>America</strong> and <strong>Australia</strong>.
+            </p>
+            <p>
+              In Theme 8 you studied how the <strong>Spanish</strong> and <strong>Portuguese</strong> conquered and colonised <strong>South America</strong>.
+            </p>
+            <p>
+              From the <strong>eighteenth century</strong> onwards, more and more areas in:
+            </p>
+            <ul>
+              <li>South America</li>
+              <li>Central America</li>
+              <li>North America</li>
+              <li>South Africa</li>
+              <li>Australia</li>
+              <li>New Zealand</li>
+            </ul>
+            <p>
+              were settled by people who came from <strong>Europe</strong>.
+            </p>
+            <p>
+              These European settlements were called <strong>colonies</strong>.
+              Because of these colonies, many native people were pushed out of their homelands into other areas.
+            </p>
+            <p>
+              Later, when the European people living in these colonies became <strong>independent</strong> from their European “mother‑country”, the colonies turned into <strong>states or countries</strong>.
+            </p>
+            <p>
+              In the <strong>nineteenth and twentieth centuries</strong>, people from <strong>Asian countries</strong> also migrated to some of these places.
+            </p>
+            <p>
+              Today, in such countries, <strong>Europeans and Asians</strong> form the majority of the population, while the <strong>native inhabitants</strong> are very few in number.
+            </p>
+            <p>
+              You will hardly see native people in many towns. Most people have even forgotten that natives once lived in large parts of these countries, and that the names of many rivers and towns actually come from native languages. Examples:
+            </p>
+            <ul>
+              <li><strong>Ohio</strong>, <strong>Mississippi</strong>, <strong>Seattle</strong> – in the USA</li>
+              <li><strong>Saskatchewan</strong> – in Canada</li>
+              <li><strong>Wollongong</strong>, <strong>Parramatta</strong> – in Australia</li>
+            </ul>
+            <p>
+              Till the <strong>mid‑twentieth century</strong>, school history books in America and Australia used to tell the story of how Europeans <strong>“discovered”</strong> the Americas and Australia.
+            </p>
+            <p>
+              These books almost never mentioned native people, except to suggest that the natives were <strong>hostile</strong> to Europeans.
+            </p>
+            <p>
+              However, from the <strong>1840s</strong>, <strong>anthropologists</strong> (people who study human societies and cultures) in America began to study these native peoples.
+            </p>
+            <p>
+              Much later, from the <strong>1960s</strong>, native communities were encouraged to:
+            </p>
+            <ul>
+              <li>write their <strong>own histories</strong>, or</li>
+              <li>speak them out so that others could record them.</li>
+            </ul>
+            <p>
+              This spoken history is called <strong>oral history</strong>.
+            </p>
+            <p>
+              Today:
+            </p>
+            <ul>
+              <li>You can read many <strong>historical books</strong> and <strong>novels</strong> written by native people.</li>
+              <li>Museums in these countries often have <strong>galleries of “native art”</strong> and special sections that show <strong>aboriginal ways of life</strong>.</li>
+              <li>In the USA, the new <strong>National Museum of the American Indian</strong> has been organised and curated by <strong>American Indians themselves</strong>.</li>
+            </ul>
+          </section>
+
+          <section aria-label="European Imperialism" class="space-y-3">
+            <h3>European Imperialism</h3>
+            <p>
+              The <strong>Spanish</strong> and <strong>Portuguese</strong> empires in America (see Theme 8) stopped expanding after the <strong>seventeenth century</strong>.
+            </p>
+            <p>
+              After that, other European countries – <strong>France, Holland and England</strong> – started:
+            </p>
+            <ul>
+              <li>spreading their <strong>trading activities</strong>, and</li>
+              <li>setting up <strong>colonies</strong> in <strong>America, Africa and Asia</strong>.</li>
+            </ul>
+            <p>
+              <strong>Ireland</strong> was also almost like a colony of <strong>England</strong>, because most landowners in Ireland were English settlers.
+            </p>
+            <p>
+              From the <strong>eighteenth century</strong>, it became clear that although the main motive for creating colonies was <strong>profit</strong>, the <strong>type of control</strong> they exercised was <strong>not the same everywhere</strong>.
+            </p>
+
+            <h4>Examples of different kinds of control</h4>
+            <h4>South Asia</h4>
+            <ul>
+              <li>Trading companies such as the <strong>East India Company</strong> turned themselves into <strong>political powers</strong>.</li>
+              <li>They <strong>defeated local rulers</strong> and <strong>annexed</strong> (took over) their territories.</li>
+              <li>They kept much of the <strong>old, well‑developed administrative system</strong>.</li>
+              <li>They <strong>collected taxes</strong> from landowners.</li>
+              <li>Later, they built <strong>railways</strong> to make trade easier, dug <strong>mines</strong>, and started large <strong>plantations</strong>.</li>
+            </ul>
+
+            <h4>Africa</h4>
+            <ul>
+              <li>For a long time, Europeans traded only on the <strong>coast</strong> (except in <strong>South Africa</strong>).</li>
+              <li>They entered the <strong>interior</strong> of Africa only in the <strong>late nineteenth century</strong>.</li>
+              <li>After that, European countries made an <strong>agreement</strong> among themselves to <strong>divide Africa</strong> into colonies.</li>
+            </ul>
+            <p>
+              The word <strong>“settler”</strong> is used for:
+            </p>
+            <ul>
+              <li>the <strong>Dutch</strong> in South Africa</li>
+              <li>the <strong>British</strong> in Ireland, New Zealand and Australia</li>
+              <li>the <strong>Europeans</strong> in America</li>
+            </ul>
+            <p>
+              The <strong>official language</strong> in most of these colonies was <strong>English</strong>.
+              An exception was <strong>Canada</strong>, where <strong>French</strong> is also an official language.
+            </p>
+
+            <h4>Names given by Europeans to Countries of the “New World”</h4>
+            <ul>
+              <li>
+                <strong>“America”</strong><br />
+                Name first used after the travel accounts of <strong>Amerigo Vespucci (1451–1512)</strong> were published.
+              </li>
+              <li>
+                <strong>“Canada”</strong><br />
+                From <strong>kanata</strong>, meaning <strong>“village”</strong> in the language of the <strong>Huron‑Iroquois</strong> people.
+                This word was heard and used by the explorer <strong>Jacques Cartier</strong> in <strong>1535</strong>.
+              </li>
+              <li>
+                <strong>“Australia”</strong><br />
+                Sixteenth‑century name for a land in the <strong>Great Southern Ocean</strong>.
+                The word <strong>austral</strong> is Latin for <strong>“south”</strong>.
+              </li>
+              <li>
+                <strong>“New Zealand”</strong><br />
+                Name given by <strong>Abel Tasman</strong> of Holland, the first European to see these islands in <strong>1642</strong>.
+                <strong>zee</strong> is Dutch for <strong>“sea”</strong>.
+              </li>
+            </ul>
+            <p>
+              A reference book called the <strong>Geographical Dictionary</strong> (pages 805–22) lists <strong>over a hundred place‑names</strong> in the Americas and Australia that begin with the word <strong>“New”</strong>.
+            </p>
+          </section>
+
+          <section aria-label="North America" class="space-y-3">
+            <h3>North America</h3>
+            <h4>The Land</h4>
+            <p>
+              The continent of <strong>North America</strong> stretches:
+            </p>
+            <ul>
+              <li>from the <strong>Arctic Circle</strong> in the north to the <strong>Tropic of Cancer</strong> in the south</li>
+              <li>from the <strong>Pacific Ocean</strong> in the west to the <strong>Atlantic Ocean</strong> in the east</li>
+            </ul>
+            <p>Important physical features:</p>
+            <ul>
+              <li>
+                To the west is the <strong>Rocky Mountain</strong> chain.
+                West of this chain lies the <strong>desert of Arizona and Nevada</strong>.
+                Still further west are the <strong>Sierra Nevada</strong> mountains.
+              </li>
+              <li>
+                To the east are: the <strong>Great Plains</strong>, the <strong>Great Lakes</strong>, the <strong>valleys of the Mississippi and the Ohio rivers</strong>, and the <strong>Appalachian Mountains</strong>.
+              </li>
+              <li>To the south lies <strong>Mexico</strong>.</li>
+              <li>About <strong>40 per cent</strong> of <strong>Canada</strong> is covered with <strong>forests</strong>.</li>
+              <li>
+                There are rich <strong>oil, gas and mineral resources</strong> in many areas. This explains why there are many <strong>big industries</strong> in both the <strong>USA and Canada</strong>.
+              </li>
+              <li>
+                Today, crops such as <strong>wheat, corn and fruit</strong> are widely grown, and <strong>fishing</strong> is a major industry in <strong>Canada</strong>.
+              </li>
+            </ul>
+            <p>
+              However, <strong>mining</strong>, <strong>industry</strong> and <strong>large‑scale agriculture</strong> developed only in the <strong>last 200 years</strong>, and they were started mainly by immigrants from <strong>Europe, Africa and China</strong>.
+            </p>
+            <p>
+              Before the Europeans ever heard of North America, <strong>people had already been living there for thousands of years</strong>.
+            </p>
+
+            <h4>The Native Peoples</h4>
+            <p>
+              The first inhabitants of North America came from <strong>Asia</strong> over <strong>30,000 years ago</strong>.
+            </p>
+            <p>
+              They crossed into America over a <strong>land‑bridge</strong> across the <strong>Bering Straits</strong>.
+              During the last <strong>Ice Age</strong>, about <strong>10,000 years ago</strong>, they moved further south.
+            </p>
+            <p>
+              The <strong>oldest object</strong> (artefact) found in America – a <strong>stone arrow‑point</strong> – is about <strong>11,000 years old</strong>.
+            </p>
+            <p>
+              The population began to increase around <strong>5,000 years ago</strong>, when the <strong>climate became more stable</strong>.
+            </p>
+
+            <h4>A historian’s description of America before Europeans came</h4>
+            <p>
+              Historian <strong>William Macleish</strong>, in his book <em>The Day before America</em>, describes life before Europeans arrived:
+            </p>
+            <blockquote>
+              <p>
+                On the evening of the day before “America” (that is, before Europeans reached it and gave it that name), there was diversity everywhere.
+                People spoke <strong>more than a hundred different languages</strong>.
+                They lived in every possible mix of <strong>hunting, fishing, gathering, gardening and farming</strong>.
+                The <strong>quality of the soil</strong> and the <strong>effort needed</strong> to clear and farm it partly decided how people lived.
+                Their <strong>cultures and social ideas</strong> also guided their choices.
+                Extra supplies of <strong>fish, grain, garden plants or meat</strong> helped some societies to become powerful and layered, while others remained simpler.
+                Some cultures had already existed for <strong>thousands of years</strong>.
+              </p>
+            </blockquote>
+
+            <h4>Everyday life</h4>
+            <ul>
+              <li>People usually lived in <strong>bands or villages</strong>, often along <strong>river valleys</strong>.</li>
+              <li>They <strong>ate fish and meat</strong>, and <strong>grew vegetables and maize (corn)</strong>.</li>
+              <li>
+                They went on <strong>long journeys</strong> to hunt animals, mainly <strong>bison</strong> and <strong>wild buffalo</strong> that roamed the <strong>grasslands</strong>.
+              </li>
+            </ul>
+            <p>
+              Hunting bison became easier in the <strong>seventeenth century</strong>, when natives started riding <strong>horses</strong> bought from <strong>Spanish settlers</strong>.
+              However, they <strong>killed only as many animals as they needed for food</strong>.
+            </p>
+            <p>
+              The word <strong>“native”</strong> means a person who is <strong>born in the place where he or she lives</strong>.
+            </p>
+            <p>
+              Till the <strong>early twentieth century</strong>, Europeans commonly used the word <strong>“native”</strong> to refer to the <strong>people living in the countries they had colonised</strong>.
+            </p>
+
+            <h4>Society, Land and Culture</h4>
+            <ul>
+              <li>
+                Native people did <strong>not</strong> practise <strong>large‑scale agriculture</strong>.
+                Because they did not produce <strong>big surpluses of food</strong>, they did not build <strong>large kingdoms or empires</strong> like those in <strong>Central and South America</strong>.
+              </li>
+              <li>
+                Sometimes there were <strong>disputes between tribes over territory</strong>, but in general, <strong>control over land</strong> was <strong>not a major issue</strong>.
+              </li>
+              <li>
+                They were <strong>satisfied</strong> with the <strong>food and shelter</strong> the land gave them and <strong>did not feel a need to “own” land</strong> as private property.
+              </li>
+            </ul>
+            <p>
+              A key feature of their tradition was making <strong>formal alliances and friendships</strong>, and <strong>exchanging gifts</strong>.
+            </p>
+            <p>
+              They usually <strong>did not buy and sell goods</strong> as in a market; <strong>important goods were given as gifts</strong>.
+            </p>
+
+            <h4>Language, beliefs and skills</h4>
+            <ul>
+              <li>Many <strong>different languages</strong> were spoken in North America, but these were <strong>not written down</strong>.</li>
+              <li>
+                People believed that <strong>time moved in cycles</strong>.
+                Each tribe had its own stories about how it <strong>originated</strong>, and its <strong>earlier history</strong>.
+                These stories were passed down <strong>orally from one generation to the next</strong>.
+              </li>
+              <li>
+                They were <strong>skilled craftspeople</strong> who <strong>wove beautiful textiles</strong>.
+              </li>
+              <li>
+                They could <strong>“read the land”</strong> – they understood <strong>climate</strong>, <strong>seasons</strong> and <strong>landscapes</strong> the way a literate person reads a written text.
+              </li>
+            </ul>
+
+            <h4>Wampum belts</h4>
+            <p>
+              A special object used by many tribes was the <strong>wampum belt</strong>:
+            </p>
+            <ul>
+              <li>made of <strong>coloured shells sewn together</strong></li>
+              <li>often <strong>exchanged between tribes after a treaty (agreement) was made</strong></li>
+            </ul>
+
+            <h4>Native names used in modern life</h4>
+            <p>
+              Names of native tribes are often given to <strong>things that have nothing to do with them</strong>, for example:
+            </p>
+            <ul>
+              <li><strong>Dakota</strong> – the name of an aeroplane</li>
+              <li><strong>Cherokee</strong> – the name of a jeep</li>
+              <li><strong>Pontiac</strong> – the name of a car</li>
+              <li><strong>Mohawk</strong> – a style of haircut</li>
+            </ul>
+          </section>
+
+          <section aria-label="Encounters with Europeans" class="space-y-3">
+            <h3>Encounters with Europeans</h3>
+
+            <h4>Words used for native peoples of the “New World”</h4>
+            <ul>
+              <li>
+                <strong>aborigine</strong><br />
+                Means the <strong>native people of Australia</strong>.
+                From Latin: <strong>ab</strong> = “from”, <strong>origine</strong> = “the beginning”.
+              </li>
+              <li>
+                <strong>Aboriginal</strong><br />
+                Adjective form of aborigine.
+                Often (incorrectly) used as a <strong>noun</strong>.
+              </li>
+              <li>
+                <strong>American Indian / Amerind / Amerindian</strong><br />
+                Native peoples of <strong>North and South America</strong> and the <strong>Caribbean</strong>.
+              </li>
+              <li>
+                <strong>First Nations peoples</strong><br />
+                Term used in <strong>Canada</strong>.
+                Refers to organised native groups recognised by the <strong>Canadian government</strong>.
+                The <strong>Indians Act of 1876</strong> used the word <strong>“bands”</strong>; from the <strong>1980s</strong>, the word <strong>“nations”</strong> has been used.
+              </li>
+              <li>
+                <strong>indigenous people</strong><br />
+                People who <strong>belong naturally to a place</strong>; original inhabitants.
+              </li>
+              <li>
+                <strong>native American</strong><br />
+                The indigenous people of the <strong>Americas</strong>.
+                This term is <strong>now commonly used</strong>.
+              </li>
+              <li>
+                <strong>“Red Indian”</strong><br />
+                Old term used for the <strong>brown‑complexioned peoples</strong> whose land <strong>Columbus mistakenly thought was India</strong>.
+                This term is <strong>now considered offensive</strong>.
+              </li>
+            </ul>
+            <h4>Example of a native tribe</h4>
+            <p>
+              The <strong>Hopi</strong> are a native tribe who <strong>now live near California</strong>.
+            </p>
+            <p>
+              A photograph in your book shows <strong>a woman of the Winnebago tribe of Wisconsin</strong>. In the <strong>1860s</strong>, people of this tribe were <strong>moved to Nebraska</strong>.
+            </p>
+
+            <h4>A Hopi story about the coming of the Spanish</h4>
+            <p>
+              According to a story told by <strong>Lee Brown in 1986</strong>, the Hopis had a prophecy written on <strong>stone tablets</strong>.
+              It said that their first brothers and sisters who had gone away long ago would return as <strong>turtles across the land</strong>.
+            </p>
+            <p>
+              They would be <strong>human beings</strong>, but they would come “like turtles”.
+            </p>
+            <p>
+              So, when the time mentioned in the prophecy came, the Hopis gathered in a special <strong>village to welcome the turtles</strong>.
+              They got up early and looked towards the <strong>sunrise</strong>.
+            </p>
+            <p>
+              They saw <strong>Spanish conquistadores</strong> (Spanish conquerors) <strong>crossing the desert</strong>, covered in <strong>armour</strong>, looking like <strong>turtles across the land</strong>.
+            </p>
+            <p>
+              Thinking these were their long‑lost brothers, the Hopis <strong>went out to welcome them</strong>.
+              They <strong>offered their hands</strong> to the Spanish men for a handshake.
+            </p>
+            <p>
+              Instead of a friendly greeting, one Spanish man <strong>dropped a trinket</strong> (a small decorative object) into their hands.
+            </p>
+            <p>
+              After this, news spread across North America that <strong>hard times were coming</strong>, and that perhaps some human beings had <strong>forgotten the sacredness of all things</strong>, so that <strong>all humans on earth would suffer for it</strong>.
+            </p>
+
+            <h4>Early Trade Contacts</h4>
+            <p>
+              In the <strong>seventeenth century</strong>, European traders reached the <strong>north coast of North America</strong> after a <strong>difficult two‑month sea voyage</strong>.
+            </p>
+            <p>
+              They were <strong>relieved</strong> to find that the native peoples were <strong>friendly and welcoming</strong>.
+            </p>
+            <p>
+              Unlike the <strong>Spanish in South America</strong>, who were carried away by the <strong>abundance of gold</strong>, these traders mainly wanted to <strong>trade in fish and furs</strong>.
+            </p>
+            <p>
+              They got willing help from the <strong>natives</strong>, who were <strong>expert hunters</strong>.
+            </p>
+            <p>
+              Further south, along the <strong>Mississippi river</strong>, the <strong>French</strong> observed that:
+            </p>
+            <ul>
+              <li>
+                Natives held <strong>regular gatherings</strong> to <strong>exchange handicrafts</strong> unique to each tribe and <strong>food items</strong> which were not available in all areas.
+              </li>
+            </ul>
+            <p>
+              In exchange for local products, the <strong>Europeans</strong> gave the natives:
+            </p>
+            <ul>
+              <li><strong>blankets</strong></li>
+              <li><strong>iron vessels</strong> (often used instead of clay pots)</li>
+              <li>
+                <strong>guns</strong> – which helped them in hunting together with their traditional <strong>bows and arrows</strong>
+              </li>
+              <li><strong>alcohol</strong></li>
+            </ul>
+            <p>
+              Alcohol was <strong>new</strong> to the natives.
+              Many became <strong>addicted</strong>, which made it easier for Europeans to <strong>control the terms of trade</strong>.
+            </p>
+            <p>
+              On the other hand, Europeans picked up from the natives an <strong>addiction to tobacco</strong>.
+            </p>
+
+            <h4>Timeline: Quebec and the American Colonies</h4>
+            <h4>Quebec</h4>
+            <ul>
+              <li><strong>1497</strong> – <strong>John Cabot</strong> reaches <strong>Newfoundland</strong>.</li>
+              <li><strong>1534</strong> – <strong>Jacques Cartier</strong> travels down the <strong>St Lawrence river</strong> and meets native peoples.</li>
+              <li><strong>1608</strong> – The <strong>French</strong> found the <strong>colony of Quebec</strong>.</li>
+            </ul>
+            <h4>American colonies</h4>
+            <ul>
+              <li><strong>1507</strong> – <strong>Amerigo de Vespucci’s Travels</strong> are published.</li>
+              <li><strong>1607</strong> – The <strong>British</strong> establish the <strong>colony of Virginia</strong>.</li>
+              <li><strong>1620</strong> – The <strong>British</strong> found <strong>Plymouth</strong> colony (in <strong>Massachusetts</strong>).</li>
+            </ul>
+          </section>
+
+          <section aria-label="Mutual perceptions" class="space-y-3">
+            <h3>Mutual Perceptions</h3>
+
+            <h4>How Europeans saw themselves and the natives</h4>
+            <p>
+              In the <strong>eighteenth century</strong>, western Europeans generally said that <strong>“civilised”</strong> people were:
+            </p>
+            <ul>
+              <li><strong>literate</strong> (could read and write)</li>
+              <li>followed an <strong>organised religion</strong></li>
+              <li>lived in <strong>towns and cities (urban life)</strong></li>
+            </ul>
+            <p>
+              Using this standard, they considered the <strong>natives of America “uncivilised”</strong>.
+            </p>
+            <p>
+              Some Europeans, like the French philosopher <strong>Jean‑Jacques Rousseau</strong>, actually <strong>admired</strong> these natives.
+            </p>
+            <p>
+              He believed such people were <strong>“noble savages”</strong> – people who lived close to nature and were <strong>untainted by the corruptions of European civilisation</strong>.
+            </p>
+            <p>
+              The English poet <strong>William Wordsworth</strong> had another view.
+              Although neither he nor Rousseau had <strong>ever met a native American</strong>, Wordsworth described natives as people living:
+            </p>
+            <blockquote>
+              <p>
+                "amid wilds/Where fancy hath small liberty to grace
+                The affections, to exalt them or refine".
+              </p>
+            </blockquote>
+            <p>
+              In simple words, he felt that <strong>people living close to nature had limited imagination and emotion</strong>.
+            </p>
+
+            <h4>Thomas Jefferson’s harsh view</h4>
+            <p>
+              <strong>Thomas Jefferson</strong>, the <strong>third President of the USA</strong> and a man who lived in the same period as Wordsworth, spoke of natives in words that today would cause public anger. He wrote:
+            </p>
+            <blockquote>
+              <p>
+                "This unfortunate race which we have been taking so much pains to civilise... have justified extermination."
+              </p>
+            </blockquote>
+            <p>
+              So Jefferson actually suggested that natives deserved to be <strong>wiped out</strong>.
+            </p>
+
+            <h4>Washington Irving’s different description</h4>
+            <p>
+              Another American writer, <strong>Washington Irving</strong>, who was much <strong>younger than Wordsworth</strong> and who <strong>had actually met native people</strong>, described them very differently:
+            </p>
+            <p>
+              He wrote that the <strong>Indians he had seen in real life</strong> were <strong>not at all like the Indians shown in poetry</strong>.
+            </p>
+            <ul>
+              <li>
+                Among white men, natives seemed <strong>silent (taciturn)</strong>.
+                But this was because they <strong>did not trust whites</strong>, and did not understand their language.
+              </li>
+              <li>
+                He pointed out that <strong>white men are also silent</strong> in situations where they do not feel comfortable.
+              </li>
+            </ul>
+            <p>
+              He observed that:
+            </p>
+            <ul>
+              <li>Among themselves, <strong>Indians are lively and humorous</strong>.</li>
+              <li>They are <strong>excellent mimics</strong> and <strong>laugh a lot at the expense of the whites</strong>, who wrongly think that natives look at them with great respect.</li>
+            </ul>
+            <p>
+              Irving concluded that:
+            </p>
+            <blockquote>
+              <p>
+                White men, in his experience, often <strong>treated poor Indians as little better than animals</strong>.
+              </p>
+            </blockquote>
+
+            <h4>Different ideas about trade</h4>
+            <p>
+              To the <strong>natives</strong>, the goods they exchanged with Europeans were mainly <strong>gifts among friends</strong>, given in a <strong>spirit of friendship</strong>.
+            </p>
+            <p>
+              But the <strong>Europeans</strong>, who dreamed of <strong>becoming rich</strong>, saw fish and furs as <strong>commodities</strong> – goods to be <strong>sold for profit</strong> in distant <strong>European markets</strong>.
+            </p>
+            <ul>
+              <li>The <strong>prices</strong> of these goods in Europe <strong>went up or down</strong> according to <strong>supply</strong>.</li>
+              <li>Natives <strong>did not understand this</strong> concept of a faraway <strong>“market”</strong>.</li>
+            </ul>
+            <p>
+              They were <strong>puzzled</strong> when:
+            </p>
+            <ul>
+              <li>Sometimes traders gave them <strong>many things</strong> for the same amount of furs.</li>
+              <li>At other times traders gave them <strong>very few things</strong>.</li>
+            </ul>
+            <p>
+              They were also <strong>upset</strong> by European <strong>greed</strong>.
+            </p>
+            <p>
+              To get more furs quickly, traders had <strong>killed hundreds of beavers</strong>.
+              Natives felt uneasy and <strong>feared that the animals might take revenge on them</strong> for such destruction.
+            </p>
+            <p>
+              Many native <strong>folk tales</strong> mocked Europeans.
+              They portrayed them as <strong>greedy and deceitful</strong>.
+              However, because these were told as <strong>imaginary stories</strong>, Europeans <strong>did not understand</strong> the criticism till much later.
+            </p>
+
+            <h4>European Settlers</h4>
+            <p>
+              After the first group of <strong>traders</strong>, more Europeans came who wanted to <strong>settle permanently</strong> in America.
+            </p>
+            <p>
+              From the <strong>seventeenth century</strong> onwards, many of these settlers were <strong>religious refugees</strong>:
+            </p>
+            <ul>
+              <li><strong>Protestants</strong> living in mainly <strong>Catholic countries</strong>, or</li>
+              <li><strong>Catholics</strong> living in countries where <strong>Protestantism</strong> was the official religion</li>
+            </ul>
+            <p>
+              They were <strong>persecuted</strong> in Europe and went to America to start a <strong>new life</strong>.
+            </p>
+            <p>
+              As long as there was <strong>empty land</strong> (vacant in their eyes), this did not cause much trouble.
+              But gradually, settlers moved <strong>further inland</strong>, <strong>close to native villages</strong>.
+            </p>
+            <p>
+              They used their <strong>iron tools</strong> to <strong>cut down forests</strong>, and lay out <strong>farms</strong>.
+            </p>
+
+            <h4>Different views of nature</h4>
+            <ul>
+              <li>
+                <strong>Natives</strong> and <strong>Europeans</strong> saw <strong>forests</strong> very differently.
+                Natives could see <strong>paths and signs</strong> in the forest that were <strong>invisible to Europeans</strong>.
+              </li>
+              <li>
+                Europeans imagined forests <strong>cut down and replaced by cornfields</strong>.
+              </li>
+            </ul>
+            <p>
+              Jefferson’s <strong>“dream”</strong> was of a <strong>country filled with European small farmers</strong>, each owning his own land.
+            </p>
+            <p>
+              Natives:
+            </p>
+            <ul>
+              <li>grew crops mainly for <strong>their own use</strong>, not <strong>for sale and profit</strong>.</li>
+              <li>believed it was <strong>wrong to “own” land</strong> as private property.</li>
+            </ul>
+            <p>
+              Therefore, they <strong>could not understand</strong> Jefferson’s dream.
+              To Jefferson, this made them <strong>“uncivilised”</strong>.
+            </p>
+
+            <h4>Timeline: Canada and the USA (18th century)</h4>
+            <h4>Canada</h4>
+            <ul>
+              <li><strong>1701</strong> – French treaty with <strong>natives of Quebec</strong>.</li>
+              <li><strong>1763</strong> – <strong>Quebec</strong> conquered by the <strong>British</strong>.</li>
+              <li><strong>1774</strong> – <strong>Quebec Act</strong> passed.</li>
+              <li><strong>1791</strong> – <strong>Canada Constitutional Act</strong> passed.</li>
+            </ul>
+            <h4>USA</h4>
+            <ul>
+              <li><strong>1781</strong> – <strong>Britain recognises the USA</strong> as an <strong>independent country</strong>.</li>
+              <li><strong>1783</strong> – The <strong>British give the Mid‑West</strong> region to the USA.</li>
+            </ul>
+
+            <h4>Map 1 – The Expansion of the USA</h4>
+            <p>
+              Map 1 in your book shows how the <strong>United States</strong> gradually expanded across North America.
+            </p>
+            <p>
+              The legend (key) explains the stages:
+            </p>
+            <ul>
+              <li><strong>United States 1783</strong> – the original USA territory after independence (the area along the Atlantic coast).</li>
+              <li><strong>Louisiana Purchase from France 1803</strong> – a vast central region bought from <strong>France</strong>.</li>
+              <li><strong>Ceded by Great Britain 1818, 1842</strong> – land given by <strong>Britain</strong> in treaties.</li>
+              <li><strong>Purchased from Spain 1819</strong> – <strong>Florida</strong> and nearby areas bought from <strong>Spain</strong>.</li>
+              <li><strong>Annexed 1845</strong> – <strong>Texas</strong> added to the USA.</li>
+              <li><strong>Assigned by treaty with Great Britain 1846</strong> – mainly the <strong>Oregon Territory</strong> in the northwest.</li>
+              <li><strong>Ceded by Mexico 1848</strong> – large areas including <strong>California</strong> and <strong>New Mexico</strong> obtained from <strong>Mexico</strong> after war.</li>
+              <li><strong>Gadsden Purchase 1853</strong> – a strip of land in the south (now part of <strong>Arizona and New Mexico</strong>) bought from Mexico.</li>
+              <li><strong>Ceded by Russia 1867</strong> – <strong>Alaska</strong> bought from <strong>Russia</strong>.</li>
+            </ul>
+            <p>
+              The map also labels many present‑day states and territories (for example: <strong>California, Texas, Oregon Country, Utah Territory, New Mexico Territory, Indian Territory, Minnesota Territory, Wisconsin, Iowa, Missouri, Arkansas, Louisiana, Alabama, Georgia, Florida</strong>, and others), showing how the USA spread from the <strong>Atlantic to the Pacific</strong>.
+            </p>
+          </section>
+
+          <section aria-label="Canada and USA become countries" class="space-y-3">
+            <h3>Canada and the USA Become Countries</h3>
+            <p>
+              The modern countries known as <strong>Canada</strong> and the <strong>United States of America</strong> came into being <strong>at the end of the eighteenth century</strong>.
+            </p>
+            <p>
+              At that time they controlled only <strong>part of the land</strong> they now cover.
+              Over the next <strong>hundred years</strong>, both countries <strong>extended their territory</strong> to reach their present size.
+            </p>
+            <ul>
+              <li>
+                The <strong>USA</strong> gained large areas by:
+                <ul>
+                  <li><strong>purchasing land</strong> – for example: from <strong>France</strong> in the south (<strong>Louisiana Purchase</strong>) and from <strong>Russia</strong> in the north (<strong>Alaska</strong>).</li>
+                  <li><strong>war</strong> – much of the <strong>southern USA</strong> was won from <strong>Mexico</strong>.</li>
+                </ul>
+              </li>
+            </ul>
+            <p>
+              When these acquisitions were made, <strong>no one thought of asking the consent of the native people</strong> who already lived there.
+            </p>
+            <p>
+              The <strong>western “frontier”</strong> of the USA was always <strong>moving westwards</strong>, and as it moved, <strong>natives were repeatedly forced to move further back</strong>.
+            </p>
+
+            <h4>Timeline: Canada and USA (19th century)</h4>
+            <h4>Canada</h4>
+            <ul>
+              <li><strong>1837</strong> – <strong>French Canadian rebellion</strong>.</li>
+              <li><strong>1840</strong> – <strong>Canadian Union of Upper and Lower Canada</strong>.</li>
+              <li><strong>1859</strong> – <strong>Canada Gold Rush</strong>.</li>
+              <li><strong>1867</strong> – <strong>Confederation of Canada</strong> formed.</li>
+              <li><strong>1869–85</strong> – <strong>Red River Rebellion</strong> by the <strong>Metis</strong> in Canada.</li>
+              <li><strong>1876</strong> – <strong>Canada Indians Act</strong> passed.</li>
+              <li><strong>1885</strong> – <strong>Transcontinental railway</strong> links <strong>east and west coasts</strong> of Canada.</li>
+            </ul>
+            <h4>USA</h4>
+            <ul>
+              <li><strong>1803</strong> – <strong>Louisiana</strong> purchased from France.</li>
+              <li><strong>1825–58</strong> – Natives in the USA <strong>moved to reserves</strong>.</li>
+              <li><strong>1832</strong> – <strong>Justice Marshall’s judgment</strong> (about Cherokee sovereignty).</li>
+              <li><strong>1849</strong> – <strong>American Gold Rush</strong>.</li>
+              <li><strong>1861–65</strong> – <strong>American Civil War</strong>.</li>
+              <li><strong>1865–90</strong> – <strong>American Indian Wars</strong>.</li>
+              <li><strong>1870</strong> – <strong>Transcontinental railway</strong> completed in the USA.</li>
+              <li><strong>1890</strong> – <strong>Bison</strong> almost <strong>exterminated in America</strong>.</li>
+              <li><strong>1892</strong> – Official <strong>“End” of the American frontier</strong>.</li>
+            </ul>
+
+            <h4>Changing American Landscapes</h4>
+            <p>
+              In the <strong>nineteenth century</strong>, the landscape of America changed <strong>drastically</strong>.
+            </p>
+            <p>
+              Europeans treated land <strong>very differently</strong> from natives.
+            </p>
+            <ul>
+              <li>
+                Many migrants from <strong>Britain and France</strong> were <strong>younger sons</strong> who would <strong>not inherit property</strong> from their fathers.
+                They were eager to <strong>own land</strong> in America.
+              </li>
+              <li>
+                Later, large numbers of immigrants came from <strong>Germany, Sweden, Italy</strong> and other places.
+                Many had <strong>lost their lands</strong> to big farmers and wanted <strong>farms of their own</strong>.
+              </li>
+              <li>
+                People from <strong>Poland</strong> happily worked on the <strong>prairie grasslands</strong> because these grasslands reminded them of the <strong>steppes</strong> in their homeland, and land could be bought <strong>very cheaply</strong>.
+              </li>
+            </ul>
+            <p>
+              These settlers:
+            </p>
+            <ul>
+              <li><strong>Cleared land</strong> and started <strong>agriculture</strong>.</li>
+              <li>
+                Introduced crops like <strong>rice and cotton</strong>:
+                these crops did <strong>not grow well in Europe</strong>, so they could be <strong>sold there for profit</strong>.
+              </li>
+            </ul>
+            <p>
+              To <strong>protect their huge farms</strong> from <strong>wild animals</strong> such as <strong>wolves</strong> and <strong>mountain lions</strong>, these animals were <strong>hunted until they became extinct</strong>.
+            </p>
+            <p>
+              Settlers felt completely secure only after the <strong>invention of barbed wire in 1873</strong>, which allowed them to <strong>fence their land cheaply and effectively</strong>.
+            </p>
+
+            <h4>Slavery and Regional Differences</h4>
+            <p>
+              The <strong>southern</strong> part of the USA had a <strong>hot climate</strong>.
+              It was too hot for Europeans to work outside comfortably.
+            </p>
+            <p>
+              From the experience of the <strong>South American colonies</strong>, plantation owners knew that <strong>enslaved natives died in large numbers</strong>.
+            </p>
+            <p>
+              Therefore, plantation owners in the southern USA began to buy <strong>enslaved Africans</strong>.
+            </p>
+            <ul>
+              <li>There were <strong>protests</strong> from <strong>anti‑slavery groups</strong>.</li>
+              <li>
+                A ban was finally placed on the <strong>slave trade</strong>.
+                However, Africans who were already in the USA <strong>remained slaves</strong>, and so did <strong>their children</strong>.
+              </li>
+            </ul>
+            <p>
+              The <strong>northern states</strong> of the USA had a <strong>different kind of economy</strong>:
+            </p>
+            <ul>
+              <li>They did not depend on <strong>plantations</strong> or therefore on <strong>slavery</strong>.</li>
+              <li>Many northerners argued for <strong>ending slavery</strong>, calling it <strong>inhuman</strong>.</li>
+            </ul>
+            <p>
+              From <strong>1861 to 1865</strong>, there was a <strong>Civil War</strong> between:
+            </p>
+            <ul>
+              <li>the states that wished to <strong>keep slavery</strong>, and</li>
+              <li>those that supported its <strong>abolition</strong>.</li>
+            </ul>
+            <p>
+              The <strong>abolitionists (anti‑slavery side)</strong> won.
+            </p>
+            <p>
+              Slavery was <strong>legally abolished</strong>, but <strong>African Americans</strong> were able to win <strong>full civil rights</strong> only in the <strong>twentieth century</strong>.
+              It was then that <strong>segregation</strong> in schools and public transport – separate facilities for <strong>“whites” and “non‑whites”</strong> – was finally ended.
+            </p>
+
+            <h4>A Political Problem in Canada</h4>
+            <p>
+              The Canadian government faced a different long‑term problem – one that seemed even <strong>more urgent than the native question</strong>.
+            </p>
+            <ul>
+              <li>
+                In <strong>1763</strong>, after a war with <strong>France</strong>, <strong>Britain</strong> took control of <strong>Canada</strong>.
+              </li>
+              <li>
+                But now there were many <strong>French settlers</strong> in Canada.
+                They repeatedly demanded <strong>autonomous political status</strong> (self‑government).
+              </li>
+            </ul>
+            <p>
+              Only in <strong>1867</strong> was this issue settled, when Canada became a <strong>Confederation of autonomous states</strong>.
+            </p>
+          </section>
+
+          <section aria-label="Native peoples lose their land" class="space-y-3">
+            <h3>The Native Peoples Lose Their Land</h3>
+            <p>
+              In the <strong>USA</strong>, as more and more settlers arrived, they <strong>expanded their settlements</strong>.
+            </p>
+            <p>
+              The natives were often:
+            </p>
+            <ul>
+              <li><strong>persuaded</strong>, or</li>
+              <li><strong>forced</strong></li>
+            </ul>
+            <p>
+              to <strong>move away</strong> after <strong>signing treaties</strong> in which they <strong>sold their land</strong>.
+            </p>
+            <ul>
+              <li>The <strong>prices</strong> paid were usually <strong>very low</strong>.</li>
+              <li>
+                Many times, the <strong>Americans</strong> (here this term means the <strong>European people of the USA</strong>) <strong>cheated</strong> the natives.
+                They took <strong>more land</strong> than was agreed, or paid <strong>less money</strong> than promised.
+              </li>
+            </ul>
+            <p>
+              Even <strong>high officials</strong> in the government saw <strong>nothing wrong</strong> in taking native lands.
+            </p>
+
+            <h4>The Cherokee and the Georgia episode</h4>
+            <p>
+              One clear example comes from <strong>Georgia</strong>, a state in the USA.
+            </p>
+            <ul>
+              <li>
+                Officials argued that the <strong>Cherokee tribe</strong> was governed by <strong>state laws</strong>, but <strong>could not enjoy the rights of citizens</strong>.
+              </li>
+              <li>
+                This was especially unfair because among all native peoples, the <strong>Cherokees</strong> had tried the <strong>hardest to learn English</strong>, and made great efforts to <strong>understand and follow the American way of life</strong>.
+              </li>
+            </ul>
+            <p>
+              Yet they <strong>still were not given full citizenship rights</strong>.
+            </p>
+            <p>
+              In <strong>1832</strong>, the <strong>Chief Justice of the US Supreme Court</strong>, <strong>John Marshall</strong>, gave an <strong>important judgment</strong>:
+            </p>
+            <ul>
+              <li>
+                He said the <strong>Cherokees</strong> formed <strong>“a distinct community, occupying its own territory in which the laws of Georgia had no force”</strong>.
+              </li>
+              <li>He added that they had <strong>sovereignty (self‑rule) in certain matters</strong>.</li>
+            </ul>
+            <p>
+              The US President of that time, <strong>Andrew Jackson</strong>, was famous for <strong>fighting against economic and political privilege</strong> for the rich.
+            </p>
+            <p>
+              But when it came to <strong>Indians</strong>, he acted very differently.
+            </p>
+            <ul>
+              <li>He <strong>refused to accept</strong> the Chief Justice’s judgment.</li>
+              <li>
+                He ordered the <strong>US army</strong> to <strong>evict the Cherokees</strong> from their land and <strong>drive them to the Great American Desert</strong>.
+              </li>
+            </ul>
+            <p>
+              About <strong>15,000 Cherokees</strong> were forced to go.
+              On this harsh journey, more than <strong>a quarter of them died</strong>.
+            </p>
+            <p>
+              This tragic forced march is remembered as the <strong>“Trail of Tears”</strong>.
+            </p>
+
+            <h4>How settlers justified taking the land</h4>
+            <p>
+              People who occupied the land taken from tribes tried to <strong>justify their actions</strong>:
+            </p>
+            <ul>
+              <li>
+                They claimed that natives <strong>did not deserve</strong> the land because they did <strong>not use it “fully”</strong> or <strong>“to the maximum”</strong>.
+              </li>
+              <li>
+                They called natives <strong>lazy</strong> because natives did not use their <strong>craft skills</strong> to produce goods for market, were not interested in learning <strong>English</strong>, or did not want to <strong>dress in European style</strong> (which settlers called “correct” dress).
+              </li>
+              <li>
+                They argued that such people <strong>“deserved to die out”</strong>.
+              </li>
+            </ul>
+            <p>
+              As settlers <strong>cleared the prairies</strong> for <strong>farmland</strong>, they also <strong>killed wild bison</strong> in huge numbers.
+            </p>
+            <p>
+              A visiting Frenchman wrote:
+            </p>
+            <blockquote>
+              <p>
+                "Primitive man will disappear with the primitive animal."
+              </p>
+            </blockquote>
+            <p>
+              He meant that <strong>native people</strong> (whom he called “primitive man”) would vanish along with the <strong>wild animals</strong> on which they depended.
+            </p>
+
+            <h4>Activity 2 – Population Data</h4>
+            <p>
+              You are asked to comment on the following <strong>population figures</strong>:
+            </p>
+            <table class="w-full text-sm border border-slate-300 bg-white">
+              <thead class="bg-slate-100">
+                <tr>
+                  <th class="border border-slate-300 px-2 py-1 text-left">Group</th>
+                  <th class="border border-slate-300 px-2 py-1 text-left">USA: 1820 (in millions)</th>
+                  <th class="border border-slate-300 px-2 py-1 text-left">Spanish America: 1800 (in millions)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="border border-slate-300 px-2 py-1"><strong>Natives</strong></td>
+                  <td class="border border-slate-300 px-2 py-1">0.6</td>
+                  <td class="border border-slate-300 px-2 py-1">7.5</td>
+                </tr>
+                <tr>
+                  <td class="border border-slate-300 px-2 py-1"><strong>Whites</strong></td>
+                  <td class="border border-slate-300 px-2 py-1">9.0</td>
+                  <td class="border border-slate-300 px-2 py-1">3.3</td>
+                </tr>
+                <tr>
+                  <td class="border border-slate-300 px-2 py-1"><strong>Mixed Europeans</strong></td>
+                  <td class="border border-slate-300 px-2 py-1">0.1</td>
+                  <td class="border border-slate-300 px-2 py-1">5.3</td>
+                </tr>
+                <tr>
+                  <td class="border border-slate-300 px-2 py-1"><strong>Blacks</strong></td>
+                  <td class="border border-slate-300 px-2 py-1">1.9</td>
+                  <td class="border border-slate-300 px-2 py-1">0.8</td>
+                </tr>
+                <tr>
+                  <td class="border border-slate-300 px-2 py-1"><strong>Total</strong></td>
+                  <td class="border border-slate-300 px-2 py-1">11.6</td>
+                  <td class="border border-slate-300 px-2 py-1">16.9</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>
+              (“Spanish America” here means the parts of the Americas colonised by <strong>Spain</strong>.)
+            </p>
+
+            <h4>Continuing dispossession</h4>
+            <p>
+              Meanwhile, natives were <strong>constantly pushed westward</strong>.
+            </p>
+            <ul>
+              <li>
+                They were sometimes given <strong>new lands</strong> elsewhere, promised to them <strong>“in perpetuity”</strong> (for ever).
+              </li>
+              <li>
+                But whenever <strong>minerals</strong> such as <strong>lead</strong>, <strong>gold</strong> or <strong>oil</strong> were discovered on these new lands, settlers again <strong>forced the natives to move</strong>.
+              </li>
+            </ul>
+            <p>
+              Many tribes had to <strong>share land</strong> that had earlier been occupied by <strong>only one tribe</strong>, which naturally <strong>led to quarrels between them</strong>.
+              (The textbook continues this discussion on the next page.)
+            </p>
+
+            <h4>Activity 1 (from earlier page)</h4>
+            <p>
+              “<strong>Discuss the different images that Europeans and native Americans had of each other, and the different ways in which they saw nature.</strong>”
+            </p>
+            <p>
+              This activity asks you to use all the information above to compare:
+            </p>
+            <ul>
+              <li>how <strong>Europeans</strong> thought of natives, and</li>
+              <li>how <strong>natives</strong> thought of Europeans,</li>
+            </ul>
+            <p>
+              and also how each group <strong>looked at forests, land, and animals</strong>.
+            </p>
+          </section>
+
+          <section aria-label="Life on reservations" class="space-y-3">
+            <h3>Life on Reservations and the Last Rebellions</h3>
+            <p>
+              Native American groups were pushed into small, closed-off areas called <strong>“reservations”</strong>.
+              Many times, these places were <em>not</em> their original homelands, and they had no old ties with this land.
+            </p>
+            <p>
+              They did not accept this quietly.
+            </p>
+            <ul>
+              <li>In the <strong>USA</strong>, the army crushed a series of native rebellions between <strong>1865 and 1890</strong>.</li>
+              <li>In <strong>Canada</strong>, people of mixed native and European descent, called the <strong>Metis</strong>, also rose in armed revolt between <strong>1869 and 1885</strong>.</li>
+            </ul>
+            <p>
+              After these defeats, open armed resistance ended.
+            </p>
+
+            <h4>Chief Seattle’s Reply (1854) – in Simple English</h4>
+            <p>
+              In <strong>1854</strong>, the President of the USA asked a native leader, <strong>Chief Seattle</strong>, to sign a treaty.
+              By this treaty, a large part of the land on which Seattle’s people lived would go to the American government.
+            </p>
+            <p>
+              Chief Seattle sent a famous reply. In simple words, he said:
+            </p>
+            <blockquote>
+              <p>
+                You are asking, “How much will you sell your land for?” But for us, this question itself is strange.
+                No one can <strong>own</strong> the sky, the air, or the shining water.
+                If nobody owns them, how can anyone <strong>buy or sell</strong> them?
+              </p>
+              <p>
+                For my people, <strong>every part of the earth is sacred</strong> – every bright pine needle, every sandy beach, the mist among the dark woods, every open clearing, every humming insect.
+                All these are holy because they live in the memories and experience of my people.
+                Even the sap that flows in the trees carries the memories of the “red man”.
+              </p>
+              <p>
+                When the Great Chief in Washington sends word that he wants to buy our land, he is asking for something very big from us.
+                He promises to keep aside some land for us where we can live comfortably.
+                He says he will be like a father to us, and we will be like his children.
+                We will think about his offer, but agreeing will not be easy because this land is sacred to us.
+              </p>
+              <p>
+                The sparkling water in the streams and rivers is <strong>not just water</strong>; for us, it is like the <strong>blood of our ancestors</strong>.
+                If one day we do sell the land, you must remember that it is holy.
+                You must also teach your children that the land and water are holy.
+                Every faint reflection you see in the clear lake water carries stories and memories from the lives of my people.
+                The soft sound of the water is like the <strong>voice of my grandfather</strong>.
+              </p>
+            </blockquote>
+
+            <h4>Note: The Rise of Anthropology</h4>
+            <p>
+              From about the <strong>1840s</strong>, a new subject called <strong>“anthropology”</strong> (first developed in France) was introduced in North America.
+            </p>
+            <ul>
+              <li>
+                Its aim was to study the differences between native <strong>“primitive”</strong> communities and the supposedly <strong>“civilised”</strong> societies of Europe.
+              </li>
+              <li>
+                Some anthropologists wrongly argued that, just as there were no longer any “primitive” people left in Europe, the native peoples of America too would soon <strong>die out</strong>.
+              </li>
+            </ul>
+            <p>
+              (Picture on this page: a “native lodge” photographed in 1862. Archaeologists later moved this structure from the mountains and put it in a museum in Wyoming.)
+            </p>
+          </section>
+
+          <section aria-label="Gold rush and industries" class="space-y-3">
+            <h3>The Gold Rush and the Growth of Industries</h3>
+            <p>
+              People had long believed that there was <strong>gold</strong> somewhere in North America.
+            </p>
+            <ul>
+              <li>In the <strong>1840s</strong>, small amounts of gold were finally discovered in <strong>California</strong> (USA).</li>
+              <li>
+                This started the famous <strong>“Gold Rush”</strong>.
+                Thousands of excited Europeans hurried to America, dreaming of getting rich quickly.
+              </li>
+            </ul>
+            <p>
+              To reach the goldfields and to move people and goods across the continent:
+            </p>
+            <ul>
+              <li>Railway lines were built all the way across North America.</li>
+              <li>Thousands of <strong>Chinese workers</strong> were brought in to work on these railways.</li>
+              <li>The <strong>USA’s transcontinental railway</strong> was finished by <strong>1870</strong>.</li>
+              <li>The railway across <strong>Canada</strong> was completed by <strong>1885</strong>.</li>
+            </ul>
+            <p>
+              The rapid growth of the USA impressed people like <strong>Andrew Carnegie</strong>, a poor Scottish immigrant who became one of the first millionaire industrialists in the USA.
+              He famously said that while the “old nations” of Europe moved forward “at a snail’s pace”, the American “Republic thunders on at the speed of an express train”.
+            </p>
+
+            <h4>Why Industries Grew in North America</h4>
+            <p>
+              In <strong>England</strong>, the Industrial Revolution began partly because small peasants were losing their land to big farmers and had to move to towns for jobs in factories.
+            </p>
+            <p>
+              In <strong>North America</strong>, industry grew for <strong>different reasons</strong>:
+            </p>
+            <ul>
+              <li>to make <strong>railway equipment</strong>, so that fast transport could link far‑off places, and</li>
+              <li>to make <strong>agricultural machines</strong> that would make large‑scale farming easier.</li>
+            </ul>
+            <p>
+              As a result:
+            </p>
+            <ul>
+              <li>Industrial towns and cities grew.</li>
+              <li>Factories increased rapidly in both the <strong>USA</strong> and <strong>Canada</strong>.</li>
+            </ul>
+            <p>
+              In <strong>1860</strong>, the USA was still largely <strong>undeveloped</strong>.
+              By <strong>1890</strong>, it had become the <strong>leading industrial power in the world</strong>.
+            </p>
+
+            <h4>Changes in Agriculture and Wildlife</h4>
+            <ul>
+              <li>Huge stretches of land were cleared and divided into <strong>large farms</strong>.</li>
+              <li>
+                By <strong>1890</strong>, the <strong>bison</strong> (buffalo) had almost been wiped out.
+                This destroyed the <strong>hunting way of life</strong> that many native peoples had followed for centuries.
+              </li>
+            </ul>
+            <p>
+              By <strong>1892</strong>:
+            </p>
+            <ul>
+              <li>The USA’s <strong>continental expansion</strong> was complete.</li>
+              <li>All the land between the <strong>Pacific Ocean</strong> and the <strong>Atlantic Ocean</strong> was divided into <strong>states</strong>.</li>
+              <li>There was no longer any <strong>“frontier”</strong> – the open, unsettled western land which had attracted European settlers for many decades.</li>
+            </ul>
+            <p>
+              Soon afterwards, the USA began taking colonies <strong>outside</strong> its own continent:
+            </p>
+            <ul>
+              <li>in <strong>Hawaii</strong> and</li>
+              <li>in the <strong>Philippines</strong>.</li>
+            </ul>
+            <p>
+              The USA had become an <strong>imperial power</strong>.
+            </p>
+            <p>
+              (Pictures on this page show: settlers moving to California during the Gold Rush with ox‑drawn wagons; a 1909 colour print welcoming immigrants to the USA; and a photograph of a ranch on the prairie, the kind of farm many poor European immigrants dreamed of owning.)
+            </p>
+          </section>
+
+          <section aria-label="Constitutional rights USA" class="space-y-3">
+            <h3>Constitutional Rights in the USA</h3>
+            <p>
+              The <strong>“democratic spirit”</strong> had been the main slogan of the American settlers during their <strong>War of Independence</strong> in the <strong>1770s</strong>.
+            </p>
+            <ul>
+              <li>
+                This spirit of democracy came to shape how Americans saw themselves, especially in contrast to the <strong>monarchies and aristocracies</strong> of Europe (the “Old World”).
+              </li>
+              <li>
+                Another important idea was that the <strong>constitution</strong> of the USA must protect each person’s <strong>“right to property”</strong> – and that the state should not overrule this right.
+              </li>
+            </ul>
+            <p>
+              However:
+            </p>
+            <ul>
+              <li>
+                In practice, both the <strong>democratic rights</strong> (the right to vote for representatives in <strong>Congress</strong> and for the <strong>President</strong>) and the <strong>right to property</strong> were meant <strong>only for white men</strong>.
+              </li>
+            </ul>
+            <p>
+              A Canadian native writer, <strong>Daniel Paul</strong>, wrote in <strong>2000</strong> that:
+            </p>
+            <ul>
+              <li>
+                <strong>Thomas Paine</strong>, a powerful supporter of democracy during both the American War of Independence and the French Revolution, had actually used <strong>Indians as models</strong> for how society could be organised.
+              </li>
+              <li>
+                Paul argued that by using Native American societies as examples, Paine helped <strong>sow the seeds of democracy</strong> that later spread among the people of Europe.
+                (He explains this in his book <em>We Were Not the Savages</em>, p. 333.)
+              </li>
+            </ul>
+
+            <h4>Note: Karl Marx on the American Frontier</h4>
+            <p>
+              The German philosopher <strong>Karl Marx</strong> (<strong>1818–83</strong>) called the American frontier:
+            </p>
+            <blockquote>
+              <p>
+                “the last positive capitalist utopia” – a place where the <strong>endless land and space</strong> matched the <strong>endless desire for profit</strong> in capitalism, and where this desire could freely adjust itself to that open space.
+              </p>
+            </blockquote>
+            <p>
+              (He wrote this in his work <strong>Grundrisse</strong>, in the section titled <em>“Bastiat and Carey”</em>.)
+            </p>
+          </section>
+
+          <section aria-label="Winds of change North America" class="space-y-3">
+            <h3>The Winds of Change in North America</h3>
+            <p>
+              For a very long time, nothing really improved for the native peoples of the <strong>USA and Canada</strong>.
+            </p>
+
+            <h4>Report on Indian Administration</h4>
+            <p>
+              Real change only began in the <strong>1920s</strong>.
+            </p>
+            <ul>
+              <li>
+                A detailed study called <strong>The Problem of Indian Administration</strong> was directed by social scientist <strong>Lewis Meriam</strong> and published in <strong>1928</strong>.
+              </li>
+              <li>
+                It came out just a few years before the major <strong>economic depression</strong> that hit the whole USA.
+              </li>
+              <li>
+                The report painted a <strong>very dark picture</strong> of life in the reservations – especially the <strong>terrible health conditions</strong> and <strong>poor educational facilities</strong> for native peoples.
+              </li>
+            </ul>
+
+            <h4>The Indian Reorganisation Act (USA)</h4>
+            <p>
+              Many white Americans began to feel <strong>sympathy</strong> for the natives because:
+            </p>
+            <ul>
+              <li>natives were being <strong>discouraged</strong> from fully practising their own cultures, and</li>
+              <li>at the same time, they were <strong>denied the benefits of citizenship</strong>.</li>
+            </ul>
+            <p>
+              This sympathy helped lead to an important law in the USA:
+            </p>
+            <ul>
+              <li>the <strong>Indian Reorganisation Act of 1934</strong>.</li>
+              <li>This law allowed natives living in reservations to <strong>buy land</strong> and to <strong>take loans</strong>.</li>
+            </ul>
+
+            <h4>Debates about “Joining the Mainstream”</h4>
+            <p>
+              In the <strong>1950s and 1960s</strong>, the governments of the USA and Canada tried a new policy:
+            </p>
+            <ul>
+              <li>They thought of <strong>ending all special provisions</strong> for native peoples.</li>
+              <li>Their hope was that natives would “<strong>join the mainstream</strong>” – that is, adopt <strong>European (white) culture</strong> and live like other citizens.</li>
+            </ul>
+            <p>
+              But the natives <strong>did not want</strong> to give up their separate identity.
+            </p>
+            <ul>
+              <li>
+                In <strong>1954</strong>, they prepared a <strong>“Declaration of Indian Rights”</strong>.
+              </li>
+              <li>
+                Many native peoples agreed to take <strong>citizenship of the USA</strong>, but only on two conditions:
+                <ol>
+                  <li>Their <strong>reservations would not be taken away</strong>, and</li>
+                  <li>Their <strong>traditions and customs</strong> would not be interfered with.</li>
+                </ol>
+              </li>
+            </ul>
+            <p>
+              A similar struggle took place in <strong>Canada</strong>.
+            </p>
+            <ul>
+              <li>
+                In <strong>1969</strong>, the Canadian government said that it would <strong>not recognise “aboriginal rights”</strong>.
+              </li>
+              <li>
+                Native groups organised a strong opposition movement, holding <strong>demonstrations</strong> and <strong>public debates</strong>.
+              </li>
+            </ul>
+            <p>
+              The dispute continued until <strong>1982</strong>, when:
+            </p>
+            <ul>
+              <li>
+                the <strong>Constitution Act</strong> of Canada finally accepted the existing <strong>aboriginal</strong> and <strong>treaty rights</strong> of native peoples, though
+              </li>
+              <li>many details still had to be worked out.</li>
+            </ul>
+
+            <h4>Situation Today</h4>
+            <p>
+              Today, although the numbers of native peoples in the USA and Canada are <strong>much smaller</strong> than they were in the eighteenth century, they have:
+            </p>
+            <ul>
+              <li>asserted their right to <strong>follow their own cultures</strong>, and</li>
+              <li>
+                especially in <strong>Canada</strong>, gained recognition for their rights over their <strong>sacred lands</strong> in a way that their ancestors could not even imagine in the <strong>1880s</strong>.
+              </li>
+            </ul>
+
+            <h4>Activity 3 (for students) – simplified</h4>
+            <p>
+              Historian <strong>Howard Spodek</strong> once wrote about the <strong>American Revolution</strong>:
+            </p>
+            <blockquote>
+              <p>
+                For the indigenous people, its effects were the exact opposite of its effects on the white settlers – expansion for settlers meant <strong>contraction</strong> for natives, democracy for settlers became <strong>tyranny</strong> for natives, prosperity for settlers became <strong>poverty</strong> for natives, and liberty for settlers became <strong>confinement</strong> for natives.
+              </p>
+            </blockquote>
+            <p>
+              <strong>Task:</strong> Comment on this statement. Do you agree or disagree? Give reasons.
+            </p>
+
+            <h4>A Comparison of Three Groups under European Rule</h4>
+            <p>
+              Under European control in different parts of the world, three major groups were treated unequally:
+            </p>
+            <ol>
+              <li>
+                <strong>Indians under British rule (in India)</strong><br />
+                They were <strong>taxed in unfair and arbitrary ways</strong>.
+                They were <strong>not treated as equals</strong>.
+                The British “explained” this by saying that Indians were <strong>not yet ready</strong> to handle a <strong>representative government</strong>.
+              </li>
+              <li>
+                <strong>Natives in America and Australia</strong><br />
+                They were <strong>not recognised as citizens</strong> and were <strong>considered unequal</strong>.
+                Europeans justified this by saying these peoples were <strong>“primitive”</strong> – they supposedly had no settled agriculture, did not plan for the future, and did not build towns.
+              </li>
+              <li>
+                <strong>African slaves in America</strong><br />
+                They were <strong>denied personal freedom</strong>.
+                They were considered <strong>inferior</strong>.
+                Slavery was justified by saying that it was already <strong>part of their own social systems</strong>, and by claiming that <strong>black people were naturally lower</strong> than whites.
+              </li>
+            </ol>
+          </section>
+
+          <section aria-label="Australia" class="space-y-3">
+            <h2>Australia</h2>
+
+            <h3>The Native Peoples of Australia</h3>
+            <p>
+              Like the Americas, <strong>Australia</strong> has been inhabited by humans for a very long time.
+            </p>
+            <ul>
+              <li>
+                The people we commonly call <strong>“aborigines”</strong> (a general term for many different societies) began to arrive on the continent more than <strong>40,000 years ago</strong>, and possibly even earlier.
+              </li>
+              <li>
+                According to scientific research, they came from <strong>New Guinea</strong>, which at that time was joined to Australia by a <strong>land bridge</strong>.
+              </li>
+            </ul>
+            <p>
+              However, in their <strong>own traditions</strong>, these native peoples believe something different:
+            </p>
+            <ul>
+              <li>They say they did <strong>not “come” to Australia</strong> at some later date – they had <strong>always been there</strong>.</li>
+              <li>
+                The distant past is often referred to as the <strong>“Dreamtime”</strong>.
+                This is hard for many Europeans to understand, because in these stories, the line between <strong>past and present</strong> is blurred.
+              </li>
+            </ul>
+
+            <h4>Diversity of Communities</h4>
+            <p>
+              In the <strong>late eighteenth century</strong>, when the British first arrived:
+            </p>
+            <ul>
+              <li>There were between <strong>350 and 750</strong> different native communities in Australia.</li>
+              <li>Each community had <strong>its own language</strong>.</li>
+              <li>Even <strong>today</strong>, about <strong>200</strong> of these native languages are still spoken.</li>
+            </ul>
+            <p>
+              There is also another large group of indigenous people:
+            </p>
+            <ul>
+              <li>
+                the <strong>Torres Strait Islanders</strong>, who live in the <strong>north</strong>.
+                The word <strong>“Aborigine”</strong> is <strong>not used</strong> for them, because they are believed to have migrated from elsewhere and belong to a <strong>different race</strong>.
+              </li>
+            </ul>
+            <p>
+              Together, aborigines and Torres Strait Islanders made up only about <strong>2.4% </strong>of Australia’s population in <strong>2005</strong>.
+            </p>
+
+            <h4>The Settlement Pattern</h4>
+            <p>
+              Australia is <strong>sparsely populated</strong>.
+            </p>
+            <ul>
+              <li>
+                Even today, most towns and cities lie along the <strong>coast</strong>, especially the <strong>eastern coast</strong>, where the British first arrived in <strong>1770</strong>.
+              </li>
+              <li>The central parts of the continent are mostly <strong>arid desert</strong>, which is difficult to live in.</li>
+            </ul>
+
+            <h4>Timeline: The Europeans Reach Australia</h4>
+            <ul>
+              <li><strong>1606</strong> – Dutch travellers first <strong>sighted</strong> Australia.</li>
+              <li><strong>1642</strong> – Explorer <strong>Tasman</strong> landed on an island to the south, which was later named <strong>Tasmania</strong> after him.</li>
+              <li><strong>1770</strong> – <strong>James Cook</strong> reached <strong>Botany Bay</strong> on the east coast and named the area <strong>New South Wales</strong>.</li>
+              <li><strong>1788</strong> – The British founded a <strong>penal colony</strong> (a settlement for convicts) and established the town of <strong>Sydney</strong>.</li>
+            </ul>
+
+            <h4>Map of Australia (Map 2) – what it shows</h4>
+            <p>
+              A map of Australia in the book shows:
+            </p>
+            <ul>
+              <li>
+                The main cities: <strong>Darwin</strong> in the north; <strong>Perth</strong> in the west; <strong>Adelaide</strong> in the south; <strong>Melbourne</strong>, <strong>Sydney</strong>, and <strong>Canberra</strong> in the southeast; and <strong>Hobart</strong> in <strong>Tasmania</strong>.
+              </li>
+              <li>
+                Surrounding seas: the <strong>Indian Ocean</strong> to the west, the <strong>Pacific Ocean</strong> to the east, and the <strong>Southern Ocean</strong> to the south.
+              </li>
+              <li>The nearby country of <strong>New Zealand</strong> is also marked to the southeast.</li>
+            </ul>
+          </section>
+
+          <section aria-label="Early encounters Australia" class="space-y-3">
+            <h3>Early Encounters in Australia</h3>
+            <p>
+              The story of the meetings between:
+            </p>
+            <ul>
+              <li>the <strong>European settlers</strong>,</li>
+              <li>the <strong>native peoples</strong>, and</li>
+              <li>the <strong>land</strong> of Australia</li>
+            </ul>
+            <p>
+              has many similarities with the story of the Americas, though it began almost <strong>300 years later</strong>.
+            </p>
+            <ul>
+              <li>
+                Early reports from <strong>Captain Cook</strong> and his crew described the native people they met as <strong>friendly</strong>, and the sailors seemed pleased with these encounters.
+              </li>
+              <li>
+                Later, feelings changed sharply.
+                When Cook was killed by a native – not in Australia but in <strong>Hawaii</strong> – the British reacted with great anger.
+              </li>
+              <li>
+                As often happened in colonial history, this <strong>single incident</strong> was used to justify later <strong>acts of violence</strong> against many other native peoples.
+              </li>
+            </ul>
+
+            <h4>The Sydney Area in 1790 – What Was Happening?</h4>
+            <p>
+              Historians have tried to imagine what the native <strong>Daruk</strong> people around Sydney felt in <strong>1790</strong>.
+              The book gives a description which, in simple language, says:
+            </p>
+            <ul>
+              <li>
+                The <strong>British presence</strong> suddenly disturbed Aboriginal systems of <strong>food production</strong>.
+              </li>
+              <li>
+                About a <strong>thousand hungry new mouths</strong> arrived at once, and then hundreds more.
+                This created an <strong>unprecedented strain</strong> on local food supplies.
+              </li>
+            </ul>
+            <p>
+              To the Daruk people, the behaviour of the newcomers must have looked <strong>strange and frightening</strong>:
+            </p>
+            <ul>
+              <li>Sacred places were destroyed on a <strong>large scale</strong>.</li>
+              <li>
+                Trees were cut down <strong>without clear purpose</strong> – not to make canoes, not for gathering bush honey, and not for catching animals.
+              </li>
+              <li>Stones were moved and piled up.</li>
+              <li>Clay was dug out, shaped, and baked.</li>
+              <li>Deep holes were dug in the ground.</li>
+              <li>Large, clumsy buildings were being constructed.</li>
+            </ul>
+            <p>
+              At first, the Daruks might have tried to <strong>understand</strong> these actions through their <strong>own cultural ideas</strong>:
+            </p>
+            <ul>
+              <li>They may have thought that the cleared area was meant to be a <strong>sacred ceremonial ground</strong>.</li>
+              <li>
+                Perhaps they believed that a <strong>huge ritual gathering</strong> was going to take place there – something dangerous, from which it would be wise to stay away.
+              </li>
+            </ul>
+            <p>
+              In fact, it seems that the Daruk people <strong>kept their distance</strong> from the new settlement.
+              The description suggests that later:
+            </p>
+            <ul>
+              <li>the only way the authorities could <strong>bring them back</strong> was through <strong>official kidnapping</strong>.</li>
+            </ul>
+            <p>
+              (Source: P. Grimshaw, M. Lake, A. McGrath, M. Quartly, <em>Creating a Nation</em>)
+            </p>
+          </section>
+
+          <section aria-label="Convict settlers" class="space-y-3">
+            <h3>Convict Settlers and the Loss of Land</h3>
+            <p>
+              The native peoples of Australia did not realise what lay ahead:
+            </p>
+            <ul>
+              <li>
+                In the <strong>nineteenth and twentieth centuries</strong>, nearly <strong>90% </strong>of them would die – from <strong>diseases</strong> brought by Europeans, from the <strong>loss of their lands and resources</strong>, and in <strong>conflicts</strong> with the settlers.
+              </li>
+            </ul>
+            <p>
+              Earlier, the Portuguese had tried to settle <strong>Brazil</strong> with <strong>convicts</strong> (prisoners).
+            </p>
+            <ul>
+              <li>This experiment failed because the convicts behaved violently, leading to fierce <strong>native resistance</strong>.</li>
+            </ul>
+            <p>
+              The <strong>British</strong> had used the same method in their <strong>American colonies</strong> until those colonies became independent.
+              Then they shifted this practice to <strong>Australia</strong>.
+            </p>
+            <ul>
+              <li>Most of the early European settlers in Australia were <strong>convicts from England</strong>.</li>
+              <li>
+                After they completed their prison sentences, they were allowed to live as <strong>free people in Australia</strong>, on one condition:
+                they were <strong>not allowed to return</strong> to Britain.
+              </li>
+            </ul>
+            <p>
+              Having no choice but to build a life in this <strong>very different land</strong>, they felt <strong>no hesitation</strong> in <strong>forcing natives off</strong> the lands which they took over for <strong>cultivation</strong>.
+            </p>
+
+            <h4>Timeline: The Development of Australia</h4>
+            <ul>
+              <li><strong>1850</strong> – The Australian colonies were granted <strong>self‑government</strong>.</li>
+              <li>
+                <strong>1851</strong> – Immigration of <strong>Chinese coolies</strong> (indentured labourers) began, but it was <strong>stopped by law in 1855</strong>.
+              </li>
+              <li><strong>1851–1961</strong> – Period of various <strong>gold rushes</strong>.</li>
+              <li><strong>1901</strong> – Formation of the <strong>Federation of Australia</strong>, bringing together <strong>six states</strong>.</li>
+              <li><strong>1911</strong> – <strong>Canberra</strong> was established as the <strong>capital</strong>.</li>
+              <li><strong>1948–75</strong> – About <strong>two million Europeans</strong> migrated to Australia.</li>
+            </ul>
+
+            <h4>Activity 4 (for students) – simplified</h4>
+            <p>
+              In <strong>1911</strong>, it was announced that:
+            </p>
+            <ul>
+              <li><strong>New Delhi</strong> would be the capital of <strong>British India</strong>, and</li>
+              <li><strong>Canberra</strong> would be the capital of the <strong>Commonwealth of Australia</strong>.</li>
+            </ul>
+            <p>
+              <strong>Task:</strong> Compare and contrast the political position of the <strong>native peoples</strong> in India and in Australia at that time.
+            </p>
+          </section>
+
+          <section aria-label="Economic development Australia" class="space-y-3">
+            <h3>Economic Development and Labour in Australia</h3>
+            <p>
+              The pattern of economic development in Australia under European rule was <strong>narrower</strong> than in America.
+            </p>
+            <ul>
+              <li>
+                Very large <strong>sheep farms</strong> and <strong>mining stations</strong> were set up over many years, with a lot of hard labour.
+              </li>
+              <li>Later, <strong>vineyards</strong> (for grapes and wine) and <strong>wheat farms</strong> were added.</li>
+              <li>These activities became the <strong>main foundation of Australia’s wealth</strong>.</li>
+            </ul>
+            <p>
+              When the Australian states were united, people decided to build a <strong>new capital city</strong> in <strong>1911</strong>.
+            </p>
+            <ul>
+              <li>
+                One humorous suggestion for the name was <strong>“Woolwheatgold”</strong>, to show the importance of wool, wheat, and gold.
+              </li>
+              <li>
+                In the end, it was named <strong>Canberra</strong>, from the native word <strong>“kamberra”</strong>, meaning <strong>“meeting place”</strong>.
+              </li>
+            </ul>
+
+            <h4>Treatment of Workers and Immigrants</h4>
+            <ul>
+              <li>
+                Some native Australians worked on the big farms in conditions <strong>so harsh</strong> that they were <strong>almost like slaves</strong>.
+              </li>
+              <li>
+                Later, <strong>Chinese immigrants</strong> were brought in as cheap labour, similar to what happened in <strong>California</strong>.
+              </li>
+            </ul>
+            <p>
+              However, many white settlers felt uneasy about relying on <strong>non‑white workers</strong>.
+            </p>
+            <ul>
+              <li>
+                This fear led the governments in both <strong>Australia</strong> and <strong>the USA</strong> to <strong>ban Chinese immigration</strong>.
+              </li>
+              <li>
+                Until <strong>1974</strong>, there was widespread fear that large numbers of <strong>“dark” people</strong> from <strong>South Asia</strong> or <strong>Southeast Asia</strong> might move to Australia.
+              </li>
+              <li>
+                Because of this fear, there was a long‑standing <strong>government policy</strong> to <strong>keep “non‑white” people out</strong>.
+              </li>
+            </ul>
+          </section>
+
+          <section aria-label="Winds of change Australia" class="space-y-3">
+            <h3>The Winds of Change in Australia</h3>
+            <p>
+              In <strong>1968</strong>, a lecture by anthropologist <strong>W.E.H. Stanner</strong> shocked many Australians.
+              His talk was called <strong>“The Great Australian Silence”</strong>, referring to the way historians had stayed <strong>silent</strong> about the story of the <strong>aborigines</strong>.
+            </p>
+            <p>
+              From the <strong>1970s</strong>, similar to what was happening in <strong>North America</strong>, attitudes began to change.
+            </p>
+            <ul>
+              <li>
+                People wanted to understand natives not just as <strong>curiosities for anthropologists</strong>, but as <strong>communities with their own cultures</strong>.
+              </li>
+              <li>
+                These cultures had unique ways of understanding <strong>nature</strong> and <strong>climate</strong>, strong <strong>community feeling</strong>, rich traditions of <strong>storytelling</strong>, and many kinds of <strong>textile work, painting, and carving</strong>.
+              </li>
+              <li>Scholars argued that these should be <strong>studied, recorded, and respected</strong>.</li>
+            </ul>
+            <p>
+              Historian <strong>Henry Reynolds</strong> later expressed a key question in his book <strong>Why Weren’t We Told?</strong>
+            </p>
+            <ul>
+              <li>
+                He criticised the old habit of writing Australian history as if it <strong>began with Captain Cook’s “discovery”</strong>, ignoring thousands of years of native history.
+              </li>
+            </ul>
+
+            <h4>Growing Respect for Native Cultures</h4>
+            <p>
+              Since the 1970s:
+            </p>
+            <ul>
+              <li>Universities have started departments especially to <strong>study native cultures</strong>.</li>
+              <li>Art galleries have created <strong>sections for native art</strong>.</li>
+              <li>
+                Museums have been expanded to include <strong>dioramas</strong> and <strong>imaginatively designed rooms</strong> that explain native life and culture.
+              </li>
+              <li>Many natives have begun to <strong>write their own life stories</strong>.</li>
+            </ul>
+            <p>
+              This has been a <strong>very positive development</strong>, and it has come at a <strong>critical moment</strong> – because if native cultures had continued to be ignored, much of them might by now have been <strong>totally forgotten</strong>.
+            </p>
+            <p>
+              From <strong>1974</strong>, <strong>“multiculturalism”</strong> became an <strong>official policy</strong> in Australia.
+            </p>
+            <ul>
+              <li>
+                This means that the cultures of native peoples and of immigrant groups from <strong>Europe and Asia</strong> are all meant to be given <strong>equal respect</strong>.
+              </li>
+            </ul>
+
+            <h4>A Poem about Separation</h4>
+            <p>
+              The book includes a short poem called <strong>“Two Dreamtimes”</strong>, written for <strong>Oodgeroo Noonuccal</strong>.
+              In simple language, the speaker says to a woman named <strong>Kathy</strong>:
+            </p>
+            <ul>
+              <li>
+                “Kathy, my sister with a wounded heart, I can’t fully express my thanks to you.”
+                She thanks Kathy for writing down stories from the <strong>Dreamtime</strong> – stories of both happiness and sorrow – and publishing them in a <strong>paperback book</strong>.
+              </li>
+              <li>
+                The speaker remembers that, as a child, she was <strong>not allowed</strong> to play with children like Kathy, who were <strong>dark‑skinned</strong> and lived in camps by the river.
+              </li>
+              <li>
+                Because of these colour barriers, she met Kathy only <strong>late in life</strong>.
+              </li>
+              <li>
+                Only then did she begin to understand that <strong>no one had told her</strong> the land she loved so much had been <strong>taken away</strong> from Kathy’s people.
+              </li>
+            </ul>
+
+            <h4>Note on Judith Wright</h4>
+            <p>
+              <strong>Judith Wright (1915–2000)</strong> was an Australian writer and a strong <strong>supporter of aboriginal rights</strong>.
+            </p>
+            <ul>
+              <li>She wrote many powerful poems about the <strong>suffering and loss</strong> caused by keeping white people and native people <strong>separate</strong>.</li>
+            </ul>
+          </section>
+
+          <section aria-label="Human rights and land rights" class="space-y-3">
+            <h3>Human Rights, Land Rights, and Apologies</h3>
+            <p>
+              From the <strong>1970s</strong>, the phrase <strong>“human rights”</strong> started to be used widely in meetings of the <strong>United Nations (UNO)</strong> and other international organisations.
+            </p>
+            <p>
+              As these ideas spread:
+            </p>
+            <ul>
+              <li>
+                Many Australians were shocked to realise that, unlike the <strong>USA, Canada, and New Zealand</strong>, <strong>Australia had never signed treaties</strong> with its native peoples to <strong>legalise the takeover of their land</strong>.
+              </li>
+            </ul>
+            <p>
+              Instead, the Australian government had always described the land as <strong>terra nullius</strong> – a Latin term meaning <strong>“land belonging to nobody”</strong>.
+            </p>
+
+            <h4>The “Stolen Generations” and Official Enquiries</h4>
+            <p>
+              Australia also has a long and painful history of what happened to <strong>children of mixed native and European parentage</strong>:
+            </p>
+            <ul>
+              <li>Many such children were <strong>forcibly taken away</strong> from their native families and relatives.</li>
+              <li>They were brought up separately, often in institutions or with white families.</li>
+            </ul>
+            <p>
+              Public protest over such issues led to <strong>official enquiries</strong> and finally to two important decisions:
+            </p>
+            <ol>
+              <li>
+                The government recognised that native peoples have <strong>ancient and deep bonds</strong> with their land, which they consider <strong>sacred</strong>, and that these bonds must be <strong>respected</strong>.
+              </li>
+              <li>
+                It was accepted that the <strong>wrongs of the past could not be undone</strong>, but there should be a <strong>public apology</strong> for the injustice done to children in the attempt to keep <strong>“white” and “coloured”</strong> people apart.
+              </li>
+            </ol>
+
+            <h4>Important Dates in Recent Australian History</h4>
+            <ul>
+              <li>
+                <strong>1974</strong> – The official <strong>“White Australia” policy</strong> ended, and <strong>Asian immigrants</strong> were allowed to enter the country.
+              </li>
+              <li>
+                <strong>1992</strong> – In the famous <strong>Mabo case</strong>, the <strong>Australian High Court</strong> declared that the idea of <strong>terra nullius</strong> was <strong>legally invalid</strong>.
+                The court recognised that natives had <strong>land rights</strong> going back to <strong>before 1770</strong> (the year of Cook’s arrival).
+              </li>
+              <li>
+                <strong>1995</strong> – A <strong>National Enquiry into the Separation of Aboriginal and Torres Strait Islander Children from their Families</strong> was held.
+              </li>
+              <li>
+                <strong>1999 (26 May)</strong> – The first <strong>“National Sorry Day”</strong> was observed.
+                It was a formal <strong>apology</strong> for the children who were <strong>“lost”</strong> to their families between the <strong>1820s and the 1970s</strong>.
+              </li>
+            </ul>
+          </section>
+
+          <section aria-label="Exercises" class="space-y-3">
+            <h3>Exercises (simplified wording)</h3>
+
+            <h4>Answer in brief</h4>
+            <ol>
+              <li>
+                <strong>South vs North America:</strong><br />
+                Point out some <strong>differences</strong> between the native peoples of <strong>South America</strong> and <strong>North America</strong>.
+              </li>
+              <li>
+                <strong>English influences in the USA:</strong><br />
+                Besides the <strong>English language</strong>, what other features of <strong>English economic and social life</strong> can you see in the <strong>nineteenth‑century USA</strong>?
+              </li>
+              <li>
+                <strong>Meaning of “frontier”:</strong><br />
+                What did the term <strong>“frontier”</strong> mean for <strong>Americans</strong>?
+              </li>
+              <li>
+                <strong>Missing history:</strong><br />
+                Why was the history of the <strong>Australian native peoples</strong> long left <strong>out</strong> of history books?
+              </li>
+            </ol>
+
+            <h4>Answer in a short essay</h4>
+            <ol start="5">
+              <li>
+                <strong>Museums and culture:</strong><br />
+                How good are <strong>museum gallery displays</strong> at explaining the <strong>culture of a people</strong>?
+                Discuss this using examples from your <strong>own visits</strong> to museums.
+              </li>
+              <li>
+                <strong>Imagined conversation in California, c. 1880:</strong><br />
+                Imagine that around <strong>1880</strong> in <strong>California</strong>, four people meet and talk:
+                <ul>
+                  <li>a former <strong>African slave</strong>,</li>
+                  <li>a <strong>Chinese labourer</strong>,</li>
+                  <li>a <strong>German</strong> who has come during the <strong>Gold Rush</strong>, and</li>
+                  <li>a native person from the <strong>Hopi tribe</strong>.</li>
+                </ul>
+                Write out their <strong>conversation</strong>, showing their different experiences and opinions.
+              </li>
+            </ol>
+          </section>
+        </section>
+
+        <!-- Tab 2: MCQs -->
+        <section
+          id="tab-mcqs"
+          class="tab-panel hidden space-y-4"
+          role="tabpanel"
+          aria-labelledby="tab-mcqs-tab"
+        >
+          <header class="mb-2">
+            <h2 class="text-xl font-semibold text-slate-900">MCQs (20)</h2>
+            <p class="text-sm text-slate-600">
+              Each question has four options. The correct option is indicated at the end of each question.
+            </p>
+          </header>
+          <ol class="list-decimal pl-5 space-y-4 text-sm sm:text-base">
+            <li>
+              <p class="font-medium">
+                Q1. The name <strong>“America”</strong> began to be used after the travel accounts of which explorer were published?
+              </p>
+              <ul class="mt-1 space-y-0.5">
+                <li class="mcq-option" data-is-correct="false">(a) Christopher Columbus</li>
+                <li class="mcq-option" data-is-correct="true">(b) Amerigo Vespucci</li>
+                <li class="mcq-option" data-is-correct="false">(c) John Cabot</li>
+                <li class="mcq-option" data-is-correct="false">(d) Abel Tasman</li>
+              </ul>
+                         </li>
+
+            <li>
+              <p class="font-medium">
+                Q2. The word <strong>“Canada”</strong> comes from <strong>kanata</strong> in the Huron‑Iroquois language. What does <strong>kanata</strong> mean?
+              </p>
+              <ul class="mt-1 space-y-0.5">
+                <li class="mcq-option" data-is-correct="false">(a) River</li>
+                <li class="mcq-option" data-is-correct="false">(b) Mountain</li>
+                <li class="mcq-option" data-is-correct="true">(c) Village</li>
+                <li class="mcq-option" data-is-correct="false">(d) Forest</li>
+              </ul>
+              
+            </li>
+
+            <li>
+              <p class="font-medium">
+                Q3. The term <strong>“First Nations peoples”</strong> is officially used in which country for certain organised native groups?
+              </p>
+              <ul class="mt-1 space-y-0.5">
+                <li class="mcq-option" data-is-correct="false">(a) United States of America</li>
+                <li class="mcq-option" data-is-correct="false">(b) Australia</li>
+                <li class="mcq-option" data-is-correct="true">(c) Canada</li>
+                <li class="mcq-option" data-is-correct="false">(d) New Zealand</li>
+              </ul>
+                          </li>
+
+            <li>
+              <p class="font-medium">
+                Q4. The oldest artefact found in America, a stone arrow‑point, is approximately how old?
+              </p>
+              <ul class="mt-1 space-y-0.5">
+                <li class="mcq-option" data-is-correct="false">(a) 3,000 years</li>
+                <li class="mcq-option" data-is-correct="false">(b) 5,000 years</li>
+                <li class="mcq-option" data-is-correct="false">(c) 9,000 years</li>
+                <li class="mcq-option" data-is-correct="true">(d) 11,000 years</li>
+              </ul>
+                          </li>
+
+            <li>
+              <p class="font-medium">
+                Q5. According to historian <strong>William Macleish</strong> in <em>The Day before America</em>, people in pre‑European America spoke:
+              </p>
+              <ul class="mt-1 space-y-0.5">
+                <li class="mcq-option" data-is-correct="false">(a) One common language</li>
+                <li class="mcq-option" data-is-correct="false">(b) About ten different languages</li>
+                <li class="mcq-option" data-is-correct="false">(c) More than fifty different languages</li>
+                <li class="mcq-option" data-is-correct="true">(d) More than a hundred different languages</li>
+              </ul>
+                          </li>
+
+            <li>
+              <p class="font-medium">
+                Q6. The <strong>wampum belt</strong> commonly used by many tribes in North America was made primarily of:
+              </p>
+              <ul class="mt-1 space-y-0.5">
+                <li class="mcq-option" data-is-correct="false">(a) Animal skins</li>
+                <li class="mcq-option" data-is-correct="false">(b) Beads of glass</li>
+                <li class="mcq-option" data-is-correct="true">(c) Coloured shells sewn together</li>
+                <li class="mcq-option" data-is-correct="false">(d) Woven cotton threads</li>
+              </ul>
+              
+            </li>
+
+            <li>
+              <p class="font-medium">
+                Q7. In the Hopi prophecy story retold by Lee Brown, the returning brothers and sisters were expected to appear as:
+              </p>
+              <ul class="mt-1 space-y-0.5">
+                <li class="mcq-option" data-is-correct="false">(a) Eagles in the sky</li>
+                <li class="mcq-option" data-is-correct="false">(b) Fish in the river</li>
+                <li class="mcq-option" data-is-correct="true">(c) Turtles across the land</li>
+                <li class="mcq-option" data-is-correct="false">(d) Wolves in the forest</li>
+              </ul>
+                          </li>
+
+            <li>
+              <p class="font-medium">
+                Q8. Early European traders who reached the north coast of North America in the seventeenth century mainly wanted to trade in:
+              </p>
+              <ul class="mt-1 space-y-0.5">
+                <li class="mcq-option" data-is-correct="false">(a) Gold and silver</li>
+                <li class="mcq-option" data-is-correct="false">(b) Coffee and tea</li>
+                <li class="mcq-option" data-is-correct="true">(c) Fish and furs</li>
+                <li class="mcq-option" data-is-correct="false">(d) Cotton and sugar</li>
+              </ul>
+                        </li>
+
+            <li>
+              <p class="font-medium">
+                Q9. Which of the following terms for native peoples of America is now considered <strong>offensive</strong>?
+              </p>
+              <ul class="mt-1 space-y-0.5">
+                <li class="mcq-option" data-is-correct="false">(a) Native American</li>
+                <li class="mcq-option" data-is-correct="false">(b) American Indian</li>
+                <li class="mcq-option" data-is-correct="false">(c) Indigenous people</li>
+                <li class="mcq-option" data-is-correct="true">(d) Red Indian</li>
+              </ul>
+              <span class="answer-key">Correct: (d)</span>
+            </li>
+
+            <li>
+              <p class="font-medium">
+                Q10. The tragic forced march of about 15,000 Cherokees, during which over a quarter died, is remembered as the:
+              </p>
+              <ul class="mt-1 space-y-0.5">
+                <li class="mcq-option" data-is-correct="false">(a) Long Walk</li>
+                <li class="mcq-option" data-is-correct="false">(b) Great Trek</li>
+                <li class="mcq-option" data-is-correct="true">(c) Trail of Tears</li>
+                <li class="mcq-option" data-is-correct="false">(d) March of Freedom</li>
+              </ul>
+                          </li>
+
+            <li>
+              <p class="font-medium">
+                Q11. The <strong>Louisiana Purchase</strong> of 1803 involved the USA buying a vast central region of North America from which country?
+              </p>
+              <ul class="mt-1 space-y-0.5">
+                <li class="mcq-option" data-is-correct="false">(a) Spain</li>
+                <li class="mcq-option" data-is-correct="false">(b) Great Britain</li>
+                <li class="mcq-option" data-is-correct="true">(c) France</li>
+                <li class="mcq-option" data-is-correct="false">(d) Russia</li>
+              </ul>
+                          </li>
+
+            <li>
+              <p class="font-medium">
+                Q12. The <strong>American Civil War</strong> (1861–65) was mainly fought between states that wanted to:
+              </p>
+              <ul class="mt-1 space-y-0.5">
+                <li class="mcq-option" data-is-correct="false">(a) Keep and abolish monarchy</li>
+                <li class="mcq-option" data-is-correct="false">(b) Expand and restrict voting rights for women</li>
+                <li class="mcq-option" data-is-correct="true">(c) Keep slavery and abolish slavery</li>
+                <li class="mcq-option" data-is-correct="false">(d) Join and oppose joining the British Empire</li>
+              </ul>
+                          </li>
+
+            <li>
+              <p class="font-medium">
+                Q13. The famous <strong>Gold Rush</strong> in North America began in the 1840s after gold was discovered in:
+              </p>
+              <ul class="mt-1 space-y-0.5">
+                <li class="mcq-option" data-is-correct="false">(a) Alaska</li>
+                <li class="mcq-option" data-is-correct="false">(b) Nevada</li>
+                <li class="mcq-option" data-is-correct="false">(c) Yukon</li>
+                <li class="mcq-option" data-is-correct="true">(d) California</li>
+              </ul>
+                         </li>
+
+            <li>
+              <p class="font-medium">
+                Q14. The <strong>Indian Reorganisation Act of 1934</strong> in the USA mainly allowed natives living in reservations to:
+              </p>
+              <ul class="mt-1 space-y-0.5">
+                <li class="mcq-option" data-is-correct="false">(a) Serve in the British Parliament</li>
+                <li class="mcq-option" data-is-correct="false">(b) Hold the office of President</li>
+                <li class="mcq-option" data-is-correct="true">(c) Buy land and take loans</li>
+                <li class="mcq-option" data-is-correct="false">(d) Own slaves on plantations</li>
+              </ul>
+                          </li>
+
+            <li>
+              <p class="font-medium">
+                Q15. In Canada, the <strong>Constitution Act of 1982</strong> is important because it:
+              </p>
+              <ul class="mt-1 space-y-0.5">
+                <li class="mcq-option" data-is-correct="false">(a) Abolished the monarchy</li>
+                <li class="mcq-option" data-is-correct="false">(b) Forced natives to leave reservations</li>
+                <li class="mcq-option" data-is-correct="true">(c) Accepted existing aboriginal and treaty rights of native peoples</li>
+                <li class="mcq-option" data-is-correct="false">(d) Ended the use of the English language</li>
+              </ul>
+                          </li>
+
+            <li>
+              <p class="font-medium">
+                Q16. The distant past in Aboriginal Australian stories, where the line between past and present is blurred, is often called:
+              </p>
+              <ul class="mt-1 space-y-0.5">
+                <li class="mcq-option" data-is-correct="false">(a) Old Time</li>
+                <li class="mcq-option" data-is-correct="false">(b) First Time</li>
+                <li class="mcq-option" data-is-correct="true">(c) Dreamtime</li>
+                <li class="mcq-option" data-is-correct="false">(d) Sun Time</li>
+              </ul>
+                          </li>
+
+            <li>
+              <p class="font-medium">
+                Q17. In 1968, anthropologist <strong>W.E.H. Stanner</strong> drew attention to the fact that historians had ignored Aboriginal history. He called this:
+              </p>
+              <ul class="mt-1 space-y-0.5">
+                <li class="mcq-option" data-is-correct="false">(a) The Great Aboriginal Debate</li>
+                <li class="mcq-option" data-is-correct="false">(b) The Silent Frontier</li>
+                <li class="mcq-option" data-is-correct="true">(c) The Great Australian Silence</li>
+                <li class="mcq-option" data-is-correct="false">(d) The Lost Dreamtime</li>
+              </ul>
+              <span class="answer-key">Correct: (c)</span>
+            </li>
+
+            <li>
+              <p class="font-medium">
+                Q18. The Latin term <strong>terra nullius</strong>, used by the Australian government about indigenous land, literally means:
+              </p>
+              <ul class="mt-1 space-y-0.5">
+                <li class="mcq-option" data-is-correct="false">(a) Land of the tribes</li>
+                <li class="mcq-option" data-is-correct="false">(b) Sacred land</li>
+                <li class="mcq-option" data-is-correct="true">(c) Land belonging to nobody</li>
+                <li class="mcq-option" data-is-correct="false">(d) Land of the king</li>
+              </ul>
+                       </li>
+
+            <li>
+              <p class="font-medium">
+                Q19. The <strong>Mabo case</strong> of 1992 is significant because the Australian High Court:
+              </p>
+              <ul class="mt-1 space-y-0.5">
+                <li class="mcq-option" data-is-correct="false">(a) Reintroduced the White Australia policy</li>
+                <li class="mcq-option" data-is-correct="false">(b) Declared reservations illegal</li>
+                <li class="mcq-option" data-is-correct="true">(c) Rejected terra nullius and recognised indigenous land rights before 1770</li>
+                <li class="mcq-option" data-is-correct="false">(d) Ended all treaties with native peoples</li>
+              </ul>
+                       </li>
+
+            <li>
+              <p class="font-medium">
+                Q20. <strong>National Sorry Day</strong> in Australia, first observed on 26 May 1999, is primarily linked to which historical issue?
+              </p>
+              <ul class="mt-1 space-y-0.5">
+                <li class="mcq-option" data-is-correct="false">(a) The arrival of Captain Cook</li>
+                <li class="mcq-option" data-is-correct="false">(b) The end of the Gold Rushes</li>
+                <li class="mcq-option" data-is-correct="true">(c) The children of Aboriginal and Torres Strait Islander families who were forcibly separated</li>
+                <li class="mcq-option" data-is-correct="false">(d) The start of the federation in 1901</li>
+              </ul>
+                         </li>
+          </ol>
+        </section>
+
+        <!-- Tab 3: 2-Mark Questions -->
+        <section
+          id="tab-2mark"
+          class="tab-panel hidden space-y-4"
+          role="tabpanel"
+          aria-labelledby="tab-2mark-tab"
+        >
+          <header class="mb-2">
+            <h2 class="text-xl font-semibold text-slate-900">2‑Mark Questions (12)</h2>
+            <p class="text-sm text-slate-600">
+              Short factual or concept-based questions. Click “Show answer” to reveal model answers.
+            </p>
+          </header>
+          <ol class="list-decimal pl-5 space-y-3 text-sm sm:text-base">
+            <li>
+              <p class="font-medium">Q1. What is meant by the term <strong>“frontier”</strong> in the context of United States history?</p>
+              <details class="mt-1">
+                <summary>Show answer</summary>
+                <p class="mt-1 text-slate-700">
+                  In American history, the “frontier” meant the open, unsettled western land of North America that lay beyond existing states.
+                  It was the moving western edge of settlement; as settlers advanced westwards, the frontier kept shifting until, by 1892, all land between the Atlantic and Pacific had been divided into states.
+                </p>
+              </details>
+            </li>
+
+            <li>
+              <p class="font-medium">Q2. Who were the <strong>Metis</strong> in Canada, and what major rebellion did they lead?</p>
+              <details class="mt-1">
+                <summary>Show answer</summary>
+                <p class="mt-1 text-slate-700">
+                  The Metis were people of mixed native and European descent in Canada.
+                  Between 1869 and 1885 they led the <strong>Red River Rebellion</strong>, an armed revolt protesting against Canadian expansion and the way their lands and rights were being ignored.
+                </p>
+              </details>
+            </li>
+
+            <li>
+              <p class="font-medium">Q3. What is a <strong>wampum belt</strong>, and how was it used among native peoples of North America?</p>
+              <details class="mt-1">
+                <summary>Show answer</summary>
+                <p class="mt-1 text-slate-700">
+                  A wampum belt was a belt made of coloured shells sewn together, used by many North American tribes.
+                  It was often exchanged between tribes after a treaty or agreement, serving as a symbolic record of the alliance and promises made.
+                </p>
+              </details>
+            </li>
+
+            <li>
+              <p class="font-medium">Q4. Why did <strong>alcohol</strong> become a serious problem in early trade between Europeans and native Americans?</p>
+              <details class="mt-1">
+                <summary>Show answer</summary>
+                <p class="mt-1 text-slate-700">
+                  Alcohol was new to native peoples, and many became addicted to it.
+                  This addiction made them more dependent on European traders and allowed the traders to control the terms of trade more easily, often to the natives’ disadvantage.
+                </p>
+              </details>
+            </li>
+
+            <li>
+              <p class="font-medium">Q5. Why did <strong>slavery</strong> grow mainly in the southern states of the USA and not in the northern states?</p>
+              <details class="mt-1">
+                <summary>Show answer</summary>
+                <p class="mt-1 text-slate-700">
+                  The southern USA had a hot climate and depended on large plantations growing crops like cotton and rice, so planters used enslaved Africans for field labour.
+                  The northern states had a different kind of economy that did not depend on plantations, so they did not rely on slavery and many northerners called it inhuman.
+                </p>
+              </details>
+            </li>
+
+            <li>
+              <p class="font-medium">Q6. What was the main recommendation or effect of the <strong>Indian Reorganisation Act of 1934</strong> in the USA?</p>
+              <details class="mt-1">
+                <summary>Show answer</summary>
+                <p class="mt-1 text-slate-700">
+                  The Indian Reorganisation Act of 1934 allowed natives living in reservations to <strong>buy land</strong> and to <strong>take loans</strong>.
+                  It marked a change from earlier policies that had tried to break up native lands and discourage native cultures.
+                </p>
+              </details>
+            </li>
+
+            <li>
+              <p class="font-medium">Q7. Explain the meaning of the phrase <strong>“terra nullius”</strong> in Australian history.</p>
+              <details class="mt-1">
+                <summary>Show answer</summary>
+                <p class="mt-1 text-slate-700">
+                  <em>Terra nullius</em> is a Latin term meaning “land belonging to nobody”.
+                  The Australian government used it to claim that the continent had no owners, so settlers could take land without signing treaties with indigenous peoples.
+                </p>
+              </details>
+            </li>
+
+            <li>
+              <p class="font-medium">Q8. What do Aboriginal Australians mean by <strong>“Dreamtime”</strong>?</p>
+              <details class="mt-1">
+                <summary>Show answer</summary>
+                <p class="mt-1 text-slate-700">
+                  “Dreamtime” is how many Aboriginal traditions describe the distant past when ancestral beings shaped the land and life.
+                  In these stories the boundary between past and present is blurred, and people often say they have always been in Australia, not that they migrated from elsewhere.
+                </p>
+              </details>
+            </li>
+
+            <li>
+              <p class="font-medium">Q9. Why is the <strong>Mabo case (1992)</strong> considered a turning point for indigenous land rights in Australia?</p>
+              <details class="mt-1">
+                <summary>Show answer</summary>
+                <p class="mt-1 text-slate-700">
+                  In the Mabo case of 1992, the Australian High Court declared that terra nullius was legally invalid.
+                  It recognised that indigenous peoples had land rights going back to before 1770, when Captain Cook arrived, and so opened the way for recognising native title.
+                </p>
+              </details>
+            </li>
+
+            <li>
+              <p class="font-medium">Q10. Who was <strong>W.E.H. Stanner</strong>, and what did he criticise in his lecture on <strong>“The Great Australian Silence”</strong>?</p>
+              <details class="mt-1">
+                <summary>Show answer</summary>
+                <p class="mt-1 text-slate-700">
+                  W.E.H. Stanner was an anthropologist who, in 1968, gave a lecture called “The Great Australian Silence”.
+                  He criticised the way historians had kept silent about Aboriginal history, writing as if Australian history began with Captain Cook’s “discovery”.
+                </p>
+              </details>
+            </li>
+
+            <li>
+              <p class="font-medium">Q11. Who are meant by the <strong>“Stolen Generations”</strong> in Australia?</p>
+              <details class="mt-1">
+                <summary>Show answer</summary>
+                <p class="mt-1 text-slate-700">
+                  The “Stolen Generations” refers to children of Aboriginal and Torres Strait Islander families, especially of mixed parentage, who were forcibly taken away from their families.
+                  They were raised in institutions or with white families, as part of attempts to separate “white” and “coloured” people.
+                </p>
+              </details>
+            </li>
+
+            <li>
+              <p class="font-medium">Q12. What did historian <strong>Howard Spodek</strong> say about the effect of the American Revolution on indigenous peoples?</p>
+              <details class="mt-1">
+                <summary>Show answer</summary>
+                <p class="mt-1 text-slate-700">
+                  Howard Spodek wrote that the American Revolution had the opposite effect on natives compared to white settlers.
+                  For settlers it meant expansion, democracy, prosperity and liberty; for indigenous peoples it meant contraction, tyranny, poverty and confinement.
+                </p>
+              </details>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Tab 4: 4-Mark Questions -->
+        <section
+          id="tab-4mark"
+          class="tab-panel hidden space-y-4"
+          role="tabpanel"
+          aria-labelledby="tab-4mark-tab"
+        >
+          <header class="mb-2">
+            <h2 class="text-xl font-semibold text-slate-900">4‑Mark Questions (8)</h2>
+            <p class="text-sm text-slate-600">
+              Longer questions focusing on explanation, comparison, causes–effects and significance.
+            </p>
+          </header>
+          <ol class="list-decimal pl-5 space-y-3 text-sm sm:text-base">
+            <li>
+              <p class="font-medium">Q1. Compare how <strong>Europeans</strong> and <strong>native Americans</strong> looked at land, forests and nature.</p>
+              <details class="mt-1">
+                <summary>Show answer</summary>
+                <p class="mt-1 text-slate-700">
+                  Native Americans saw land and nature as sacred and as a source of food and shelter rather than a thing to be owned.
+                  They did not feel a need to “own” land as private property, hunted only as many animals as they needed, and believed that every part of the earth – forests, streams, animals – carried the memories of their ancestors.
+                </p>
+                <p class="mt-1 text-slate-700">
+                  Europeans, on the other hand, treated land as property to be bought, sold and fenced for profit.
+                  They imagined forests being cut down and replaced by cornfields, introduced large-scale agriculture and barbed‑wire fencing, and saw animals and natural resources mainly as commodities for markets in Europe.
+                </p>
+              </details>
+            </li>
+
+            <li>
+              <p class="font-medium">Q2. Explain the main ways in which native peoples of the <strong>USA</strong> gradually lost their lands during the nineteenth century.</p>
+              <details class="mt-1">
+                <summary>Show answer</summary>
+                <p class="mt-1 text-slate-700">
+                  As more European settlers arrived, natives were persuaded or forced to sign treaties selling their lands, usually for very low prices.
+                  Americans often cheated them by taking more land than agreed or paying less than promised, and high officials saw nothing wrong in this dispossession.
+                </p>
+                <p class="mt-1 text-slate-700">
+                  When the USA bought or conquered new regions, nobody asked native consent, and the western frontier kept moving westwards, pushing tribes back onto reservations.
+                  Even lands promised “in perpetuity” were taken again whenever minerals like gold, lead or oil were discovered, and tribes were forced to move yet again, sometimes sharing crowded areas with other tribes.
+                </p>
+              </details>
+            </li>
+
+            <li>
+              <p class="font-medium">Q3. Describe the causes and consequences of the <strong>Gold Rush</strong> and the building of <strong>transcontinental railways</strong> in North America.</p>
+              <details class="mt-1">
+                <summary>Show answer</summary>
+                <p class="mt-1 text-slate-700">
+                  In the 1840s, small amounts of gold were discovered in California, setting off the Gold Rush as thousands of Europeans hurried to America hoping to get rich.
+                  To reach the goldfields and move people and goods, railways were built across North America, and thousands of Chinese workers were brought in to build them.
+                </p>
+                <p class="mt-1 text-slate-700">
+                  The USA’s transcontinental railway was completed by 1870 and Canada’s by 1885, helping towns and industries to grow rapidly.
+                  This also speeded up settlement of the interior, the clearing of land for large farms, the near‑extermination of bison, and the final closing of the American frontier by 1892.
+                </p>
+              </details>
+            </li>
+
+            <li>
+              <p class="font-medium">Q4. How and why did <strong>industrialisation</strong> develop differently in <strong>North America</strong> compared to <strong>England</strong>?</p>
+              <details class="mt-1">
+                <summary>Show answer</summary>
+                <p class="mt-1 text-slate-700">
+                  In England, the Industrial Revolution partly grew out of the enclosure of land, which drove small peasants off the countryside and into towns to work in factories.
+                  Loss of land and lack of rural work pushed people into industrial employment.
+                </p>
+                <p class="mt-1 text-slate-700">
+                  In North America, industry developed mainly to support expansion – to produce railway equipment that could link distant areas and to make agricultural machines for large‑scale farming.
+                  By 1890, these needs had helped turn the USA from a largely undeveloped country in 1860 into the leading industrial power in the world.
+                </p>
+              </details>
+            </li>
+
+            <li>
+              <p class="font-medium">Q5. How did the <strong>democratic ideas</strong> of the American Revolution contrast with the <strong>actual treatment</strong> of natives, Africans and colonised Indians?</p>
+              <details class="mt-1">
+                <summary>Show answer</summary>
+                <p class="mt-1 text-slate-700">
+                  The American settlers’ slogan in the 1770s was the “democratic spirit”, and they insisted that the constitution must protect each person’s right to property.
+                  But in practice, voting rights and property protections were meant only for white men, while natives and African slaves were excluded.
+                </p>
+                <p class="mt-1 text-slate-700">
+                  Indians under British rule in India were heavily taxed and denied equality, natives in America and Australia were treated as “primitive” and not recognised as citizens, and African slaves in America were denied personal freedom and considered naturally inferior.
+                  Historian Howard Spodek summed this up by saying that expansion, democracy, prosperity and liberty for settlers meant contraction, tyranny, poverty and confinement for natives.
+                </p>
+              </details>
+            </li>
+
+            <li>
+              <p class="font-medium">Q6. Outline the major impacts of European settlement on the <strong>aboriginal peoples of Australia</strong> up to the early twentieth century.</p>
+              <details class="mt-1">
+                <summary>Show answer</summary>
+                <p class="mt-1 text-slate-700">
+                  After the British founded a penal colony at Sydney in 1788, convict settlers and later free settlers rapidly took over Aboriginal lands for cultivation, often forcing natives off their traditional territories.
+                  Aboriginal food systems were disrupted, sacred places destroyed, and many communities faced violence.
+                </p>
+                <p class="mt-1 text-slate-700">
+                  In the nineteenth and twentieth centuries nearly 90% of native Australians died from European diseases, loss of land and resources, and conflicts with settlers.
+                  Some natives were used as harshly treated labourers, Chinese immigration was first encouraged then restricted, and a long‑standing policy aimed to keep “non‑white” people out of Australia.
+                </p>
+              </details>
+            </li>
+
+            <li>
+              <p class="font-medium">Q7. Explain how attitudes towards <strong>native cultures</strong> in Australia changed from the late 1960s onwards.</p>
+              <details class="mt-1">
+                <summary>Show answer</summary>
+                <p class="mt-1 text-slate-700">
+                  In 1968 W.E.H. Stanner criticised “The Great Australian Silence”, the way historians had ignored Aboriginal history.
+                  From the 1970s, people began to see natives not just as subjects for anthropologists but as communities with rich cultures, strong community life, storytelling and artistic traditions.
+                </p>
+                <p class="mt-1 text-slate-700">
+                  Universities created departments to study native cultures, art galleries and museums opened sections for native art and life, and many natives started writing their own life stories.
+                  In 1974 multiculturalism became official policy, aiming to give equal respect to the cultures of native peoples and immigrant groups from Europe and Asia.
+                </p>
+              </details>
+            </li>
+
+            <li>
+              <p class="font-medium">Q8. Discuss how ideas of <strong>human rights</strong> and later legal decisions tried to address injustices against indigenous Australians from the 1970s onwards.</p>
+              <details class="mt-1">
+                <summary>Show answer</summary>
+                <p class="mt-1 text-slate-700">
+                  From the 1970s, “human rights” became an important theme in international discussions, and Australians realised that, unlike the USA, Canada and New Zealand, their country had never signed land treaties with indigenous peoples.
+                  Public protests over forced child removals and other injustices led to official enquiries.
+                </p>
+                <p class="mt-1 text-slate-700">
+                  Key steps included ending the White Australia policy in 1974, the Mabo judgment in 1992 which rejected <em>terra nullius</em> and recognised historic land rights, a 1995 national enquiry into the separation of Aboriginal and Torres Strait Islander children, and the first National Sorry Day in 1999 to publicly apologise for the “Stolen Generations”.
+                </p>
+              </details>
+            </li>
+          </ol>
+        </section>
+      </div>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white mt-4">
+      <div class="max-w-5xl mx-auto px-4 py-4 text-xs sm:text-sm text-slate-500 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+        <p>Theme 6 – Displacing Indigenous Peoples | Study Notes Website Demo</p>
+        <p>Single-page, mobile-first revision tool for students and teachers.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Tabs JavaScript -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const tabButtons = Array.from(document.querySelectorAll(".tab-button"));
+      const tabPanels = Array.from(document.querySelectorAll(".tab-panel"));
+
+      function activateTab(button) {
+        const targetId = button.getAttribute("data-tab-target");
+
+        tabButtons.forEach((btn) => {
+          const isActive = btn === button;
+          btn.setAttribute("aria-selected", isActive ? "true" : "false");
+        });
+
+        tabPanels.forEach((panel) => {
+          if (panel.id === targetId) {
+            panel.classList.remove("hidden");
+          } else {
+            panel.classList.add("hidden");
+          }
+        });
+      }
+
+      tabButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          activateTab(button);
+        });
+
+        button.addEventListener("keydown", (event) => {
+          const currentIndex = tabButtons.indexOf(button);
+          if (event.key === "ArrowRight") {
+            event.preventDefault();
+            const nextIndex = (currentIndex + 1) % tabButtons.length;
+            tabButtons[nextIndex].focus();
+            activateTab(tabButtons[nextIndex]);
+          } else if (event.key === "ArrowLeft") {
+            event.preventDefault();
+            const prevIndex = (currentIndex - 1 + tabButtons.length) % tabButtons.length;
+            tabButtons[prevIndex].focus();
+            activateTab(tabButtons[prevIndex]);
+          }
+        });
+      });
+
+      // MCQ interactivity
+      const mcqQuestions = document.querySelectorAll("#tab-mcqs ol > li");
+      mcqQuestions.forEach((question) => {
+        const options = question.querySelectorAll(".mcq-option");
+        if (!options.length) return;
+
+        const correctOption = Array.from(options).find((opt) =>
+          opt.getAttribute("data-is-correct") === "true"
+        );
+
+        options.forEach((opt) => {
+          opt.setAttribute("tabindex", "0");
+          opt.addEventListener("click", () => {
+            if (opt.classList.contains("disabled")) return;
+
+            options.forEach((o) => o.classList.add("disabled"));
+
+            if (opt.getAttribute("data-is-correct") === "true") {
+              opt.classList.add("correct");
+            } else {
+              opt.classList.add("wrong");
+              if (correctOption) correctOption.classList.add("correct");
+            }
+          });
+
+          opt.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" || event.key === " ") {
+              event.preventDefault();
+              opt.click();
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
